@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import AppRouter from './routes/Router'; // Router ফাইলটি ইমপোর্ট করুন
+import AppRouter from './routes/Router'; 
 import coursesData from './data/courseData';
 
-function App() {
+
+  function App() {
   const [enrolledIds, setEnrolledIds] = useState([]);
 
   const handleEnroll = (id) => {
@@ -15,18 +15,22 @@ function App() {
   };
 
   return (
-    <Router>
-      <Navbar enrolledCount={enrolledIds.length} />
+    <>
+      <Navbar
+        courses={coursesData}
+        enrolledIds={enrolledIds}
+      />
+
       <main className="min-h-screen pt-20">
-        {/* Router component-এ ডাটা পাস করুন */}
-        <AppRouter 
-          onEnroll={handleEnroll} 
-          enrolledIds={enrolledIds} 
-          courses={coursesData} 
+        <AppRouter
+          onEnroll={handleEnroll}
+          enrolledIds={enrolledIds}
+          courses={coursesData}
         />
       </main>
+
       <Footer />
-    </Router>
+    </>
   );
 }
 

@@ -5,6 +5,7 @@ import About from '../pages/About';
 import Teachers from '../pages/Teachers';
 import Contact from '../pages/Contact';
 
+
 const AppRouter = ({ onEnroll, enrolledIds, courses }) => {
   return (
     <Routes>
@@ -19,6 +20,7 @@ const AppRouter = ({ onEnroll, enrolledIds, courses }) => {
       <Route path="/about" element={<About />} />
       <Route path="/teachers" element={<Teachers />} />
       <Route path="/contact" element={<Contact />} />
+      
     </Routes>
   );
 };
