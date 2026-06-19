@@ -27,3 +27,41 @@
 .text-glow {
   text-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
 }
+/* ড্রপডাউনকে মাউসের নাগালের মধ্যে রাখা */
+.nav-item {
+  position: relative;
+}
+
+/* প্রথম ড্রপডাউন */
+.dropdown-level-1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 50;
+  padding-top: 10px; /* এই প্যাডিংটি মাউসের জন্য 'সেতু' হিসেবে কাজ করে */
+}
+
+/* সাব-লেভেল ড্রপডাউন (Flyout) */
+.dropdown-sub {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 60;
+  padding-left: 2px; /* সাইড গ্যাপ কমানোর জন্য */
+}
+
+/* হোভার করলে শুধুমাত্র সরাসরি চাইল্ড মেনু দেখাবে */
+.nav-item:hover > .dropdown-level-1,
+.sub-item:hover > .dropdown-sub {
+  display: block;
+}
+
+/* মেনু আইটেম ডিজাইন */
+.menu-container {
+  background-color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 240px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}

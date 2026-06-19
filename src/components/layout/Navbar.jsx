@@ -1,140 +1,186 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ShoppingBag, CheckCircle, ArrowRight } from 'lucide-react';
+import { Menu, X, ChevronDown, ChevronRight, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import navLinks from '../../data/navLinks';
+import ImgBd from '../../assets/bd.png';
 
-const Navbar = ({ courses = [], enrolledIds = [] }) => {
-  const [isOpen, setIsOpen] = useState(false); // Mobile Menu State
-  const [isCartOpen, setIsCartOpen] = useState(false); // Cart Drawer State
+const Navbar = () => {
+  const { t, i18n } = useTranslation();
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [openMobileSub, setOpenMobileSub] = useState(null);
 
-  // এনরোল করা কোর্সগুলো ফিল্টার করা
-  const enrolledCourses = courses.filter(course => enrolledIds.includes(course.id));
-
-  const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Courses", path: "/courses" },
-    { name: "Mentors", path: "/teachers" },
-    { name: "Contact", path: "/contact" },
+  const languages = [
+    { code: 'en', name: 'English', flag: '🇺🇸' },
+    { code: 'bn', name: 'বাংলা', flag: '🇧🇩' },
+    { code: 'fr', name: 'French', flag: '🇫🇷' },
+    { code: 'jp', name: 'Japanese', flag: '🇯🇵' },
+    { code: 'de', name: 'German', flag: '🇩🇪' },
   ];
 
-  return (
-    <>
-      <nav className="fixed w-full z-[100] bg-[#030712]/80 backdrop-blur-xl border-b border-white/5 h-20 flex items-center">
-        <div className="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
-          
-          {/* LOGO */}
-          <Link to="/" className="text-2xl font-black text-white tracking-tighter">
-            PRE<span className="text-cyan-500">FUTURE</span>
-          </Link>
+  const formatName = (name) => {
+    const translatedName = t(name);
+    if (translatedName.startsWith("1.")) {
+      return (
+        <>
+          <span className="text-cyan-500 mr-1 font-black animate-pulse">1.</span>
+          {translatedName.replace("1.", "")}
+        </>
+      );
+    }
+    return translatedName;
+  };
 
-          {/* DESKTOP MENU */}
-          <div className="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-widest text-slate-400">
+  return (
+    <header className="fixed top-0 w-full z-[100]">
+      {/* --- ১. টপ স্লোগান বার (ডিজাইন একদম সেম) --- */}
+      <div className="bg-[#020617] border-b border-white/5 py-1.5 flex justify-center items-center overflow-hidden">
+        <span className="relative px-6 py-0.5 rounded-full font-extrabold text-white text-[11px] md:text-[12px] 
+          bg-gradient-to-r from-pink-500 via-red-500 to-yellow-400 
+          shadow-[0_0_15px_rgba(236,72,153,0.3)] animate-pulse uppercase tracking-wider">
+          সবার আগে বাংলাদেশ 🇧🇩
+          <span className="absolute inset-0 bg-white/10 blur-xl opacity-40 pointer-events-none"></span>
+        </span>
+      </div>
+
+      {/* --- ২. মেইন নেভিবার (ডিজাইন একদম সেম) --- */}
+      <nav className="bg-[#0b101b]/95 backdrop-blur-md border-b border-white/10 h-20 flex items-center">
+        <div className="w-[92%] lg:w-[85%] mx-auto flex items-center justify-between h-full relative">
+          
+          {/* লোগো সেকশন */}
+          <div className="flex items-center gap-2 shrink-0">
+            <img src={ImgBd} alt="logo" className="w-8 h-8 lg:w-10 lg:h-10 object-contain" />
+            <Link to="/" className="text-white font-black text-lg lg:text-xl tracking-tighter uppercase whitespace-nowrap">
+              PRE <span className="text-cyan-400">FUTURE</span>
+            </Link>
+          </div>
+
+          {/* ডেক্সটপ মেনু (সেন্টার এলাইনমেন্ট ঠিক রাখা হয়েছে) */}
+          <div className="hidden lg:flex items-center justify-center flex-1 gap-5 px-4 h-full">
             {navLinks.map((link) => (
-              <Link key={link.name} to={link.path} className="hover:text-cyan-400 transition-colors">
-                {link.name}
-              </Link>
+              <div key={link.name} className="relative group/l1 h-20 flex items-center">
+                <Link to={link.path || "#"} className="flex items-center gap-1 text-[12px] font-bold text-slate-300 hover:text-cyan-400 uppercase tracking-widest transition-all whitespace-nowrap">
+                  {formatName(link.name)}
+                  {link.children && <ChevronDown size={14} className="opacity-40" />}
+                </Link>
+
+                {/* লেভেল ১ ড্রপডাউন (Side-by-side logic intact) */}
+                {link.children && (
+                  <ul className="absolute top-full left-0 mt-0 hidden group-hover/l1:block bg-[#0b101b] border border-white/10 min-w-[250px] shadow-2xl py-2 animate-in fade-in slide-in-from-top-1">
+                    {link.children.map((sub) => (
+                      <li key={sub.name} className="relative group/l2 border-b border-white/5 last:border-0">
+                        <div className="flex items-center justify-between px-5 py-3.5 hover:bg-zinc-900 cursor-pointer">
+                          <Link to={sub.path || "#"} className="text-white text-[13px] font-bold w-full">{t(sub.name)}</Link>
+                          {sub.children && <ChevronRight size={14} className="text-zinc-500" />}
+                        </div>
+
+                        {/* লেভেল ২ ফ্লাইআউট (ডানে খুলবে) */}
+                        {sub.children && (
+                          <ul className="absolute top-0 left-full ml-[1px] hidden group-hover/l2:block bg-[#0f172a] border border-white/10 min-w-[220px] shadow-2xl py-2">
+                            {sub.children.map((child) => (
+                              <li key={child.name} className="relative group/l3 border-b border-white/5 last:border-0 flex justify-between items-center px-5 py-2.5 hover:bg-zinc-800 cursor-pointer transition-colors">
+                                <Link to={child.path || "#"} className="text-slate-300 hover:text-white text-[12px] font-semibold w-full">{t(child.name)}</Link>
+                                {child.children && <ChevronRight size={12} className="text-zinc-600" />}
+
+                                {/* লেভেল ৩ ফ্লাইআউট (আরও ডানে খুলবে) */}
+                                {child.children && (
+                                  <ul className="absolute top-0 left-full ml-[1px] hidden group-hover/l3:block bg-[#1a202c] border border-white/10 min-w-[200px] py-2 shadow-2xl">
+                                    {child.children.map((deepItem) => (
+                                      <li key={deepItem.name} className="px-5 py-2 hover:bg-black transition-colors">
+                                        <Link to={deepItem.path || "#"} className="text-[11px] text-slate-500 hover:text-cyan-400 block w-full whitespace-nowrap">
+                                          {t(deepItem.name)}
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             ))}
           </div>
 
-          {/* RIGHT SIDE ICONS */}
-          <div className="flex items-center gap-4">
-            
-            {/* Shopping/Enrollment Bag Button */}
-            <button 
-              onClick={() => setIsCartOpen(true)}
-              className="relative group p-2 outline-none"
-            >
-              <ShoppingBag size={22} className="text-slate-300 group-hover:text-cyan-400 transition-colors" />
-              {enrolledIds.length > 0 && (
-                <span className="absolute top-0 right-0 bg-cyan-500 text-black text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-black animate-pulse shadow-[0_0_10px_rgba(6,182,212,0.5)]">
-                  {enrolledIds.length}
+          {/* রাইট সেকশন (Language Switcher) */}
+          <div className="flex items-center gap-4 h-full shrink-0">
+            <div className="hidden lg:flex items-center relative group/lang border-l border-white/10 pl-4 h-full">
+              <button className="flex items-center gap-1 text-slate-300 hover:text-cyan-400 font-black transition-all">
+                <Globe size={18} className="text-cyan-400" />
+                <span className="text-[11px] uppercase">
+                  {i18n.language ? i18n.language.split('-')[0] : 'en'}
                 </span>
-              )}
-            </button>
+              </button>
+              <div className="absolute top-full right-0 mt-0 hidden group-hover/lang:block bg-[#0b101b] border border-white/10 min-w-[130px] shadow-2xl py-2">
+                {languages.map((l) => (
+                  <button key={l.code} onClick={() => i18n.changeLanguage(l.code)} className="w-full flex items-center gap-3 px-4 py-2.5 text-[12px] text-zinc-400 hover:bg-zinc-800 hover:text-cyan-400 transition-all font-bold">
+                    <span>{l.flag}</span> {l.name}
+                  </button>
+                ))}
+              </div>
+            </div>
 
-            {/* HAMBURGER BUTTON (Mobile) */}
-            <button 
-              onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden text-white hover:text-cyan-400 focus:outline-none"
-            >
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
-            </button>
-
-            {/* PORTAL BUTTON */}
-            <button className="hidden md:block text-[10px] font-black uppercase tracking-widest border border-white/10 px-5 py-2.5 rounded-md hover:bg-white/5 transition-all">
-              Portal
+            <button onClick={() => setIsMobileOpen(true)} className="lg:hidden text-white p-2 hover:text-cyan-400">
+              <Menu size={28} />
             </button>
           </div>
         </div>
       </nav>
 
-      {/* --- ENROLLED COURSES DRAWER (Cart) --- */}
-      {isCartOpen && (
-        <div className="fixed inset-0 z-[110] bg-black/60 backdrop-blur-sm transition-opacity" onClick={() => setIsCartOpen(false)} />
-      )}
-      
-      <div className={`fixed top-0 right-0 h-screen w-full max-w-[380px] bg-[#030712] border-l border-white/10 z-[120] transform transition-transform duration-500 ease-in-out ${isCartOpen ? "translate-x-0" : "translate-x-full"}`}>
-        <div className="p-8 flex flex-col h-full">
+      {/* --- ৩. মোবাইল ড্রয়ার (ডিজাইন একদম সেম) --- */}
+      <div className={`fixed inset-0 bg-[#0b101b] z-[200] transform transition-transform duration-500 ${isMobileOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden overflow-y-auto`}>
+        <div className="p-6 pb-20">
           <div className="flex justify-between items-center mb-10">
-            <div>
-              <h2 className="text-xl font-bold text-white">My Learning</h2>
-              <p className="text-[10px] text-slate-500 uppercase tracking-widest mt-1">Enrolled: {enrolledIds.length}</p>
-            </div>
-            <button onClick={() => setIsCartOpen(false)} className="text-slate-400 hover:text-white transition-colors">
-              <X size={24} />
-            </button>
+            <span className="text-cyan-400 font-black tracking-widest text-lg uppercase italic">Menu</span>
+            <button onClick={() => setIsMobileOpen(false)} className="text-white hover:text-red-500"><X size={32} /></button>
           </div>
 
-          {/* List of Enrolled Courses */}
-          <div className="flex-1 overflow-y-auto space-y-5 pr-2 custom-scrollbar">
-            {enrolledCourses.length === 0 ? (
-              <div className="text-center py-20">
-                <ShoppingBag size={40} className="mx-auto mb-4 text-slate-800" />
-                <p className="text-slate-500 text-sm italic">No courses enrolled yet.</p>
-              </div>
-            ) : (
-              enrolledCourses.map(course => (
-                <div key={course.id} className="group bg-white/5 border border-white/5 p-4 rounded-2xl flex gap-4 hover:border-cyan-500/30 transition-all">
-                  <div className="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-slate-800">
-                    <img src={course.image} className="w-full h-full object-cover opacity-80" alt="" />
-                  </div>
-                  <div className="flex flex-col justify-center">
-                    <h4 className="text-white font-bold text-sm line-clamp-1">{course.title}</h4>
-                    <span className="text-emerald-500 text-[10px] font-black flex items-center gap-1 mt-1 uppercase tracking-tighter">
-                      <CheckCircle size={12} /> Access Granted
-                    </span>
-                  </div>
-                </div>
-              ))
-            )}
-          </div>
-
-          <button className="w-full mt-8 bg-cyan-500 text-black font-black py-4 rounded-xl uppercase text-[10px] tracking-widest hover:bg-cyan-400 transition-all shadow-[0_10px_20px_rgba(6,182,212,0.2)] flex items-center justify-center gap-2">
-            Dashboard <ArrowRight size={14} />
-          </button>
-        </div>
-      </div>
-
-      {/* --- MOBILE MENU SIDEBAR (Existing) --- */}
-      <div className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-[110] transition-opacity md:hidden ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`} onClick={() => setIsOpen(false)}></div>
-      
-      <div className={`fixed top-0 right-0 h-screen w-3/4 max-w-75 bg-[#030712] border-l border-white/10 z-[120] transform transition-transform duration-300 md:hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
-        <div className="p-8 flex flex-col h-full">
-          <div className="flex justify-end mb-10">
-            <button onClick={() => setIsOpen(false)} className="text-slate-400"><X size={32} /></button>
-          </div>
-          <div className="flex flex-col space-y-6">
+          <ul className="space-y-6">
             {navLinks.map((link) => (
-              <Link key={link.name} to={link.path} onClick={() => setIsOpen(false)} className="text-lg font-bold uppercase tracking-widest text-slate-300 hover:text-cyan-500 transition-colors border-b border-white/5 pb-3">
-                {link.name}
-              </Link>
+              <li key={link.name} className="border-b border-white/5 pb-4">
+                <div className="flex justify-between items-center cursor-pointer" onClick={() => setOpenMobileSub(openMobileSub === link.name ? null : link.name)}>
+                  <Link to={link.path || "#"} onClick={() => !link.children && setIsMobileOpen(false)} className="text-[16px] font-bold text-white uppercase italic tracking-wider">
+                    {formatName(link.name)}
+                  </Link>
+                  {link.children && <ChevronDown size={20} className={`text-zinc-500 transition-transform ${openMobileSub === link.name ? 'rotate-180' : ''}`} />}
+                </div>
+
+                {link.children && openMobileSub === link.name && (
+                  <ul className="mt-4 ml-4 space-y-4 border-l border-cyan-500/30 pl-4">
+                    {link.children.map(sub => (
+                      <li key={sub.name} className="mb-4">
+                        <div className="text-zinc-300 font-semibold text-[14px] mb-2">{t(sub.name)}</div>
+                        {sub.children && (
+                          <ul className="ml-4 space-y-2 border-l border-white/10 pl-4">
+                             {sub.children.map(child => (
+                               <li key={child.name} className="text-zinc-500 text-[12px] py-1">
+                                 <Link to={child.path || "#"} onClick={() => setIsMobileOpen(false)}>{t(child.name)}</Link>
+                               </li>
+                             ))}
+                          </ul>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
             ))}
-          </div>
-          <div className="mt-auto">
-            <button className="w-full bg-cyan-500 text-black font-black py-4 rounded-xl uppercase text-xs tracking-widest">Portal Login</button>
-          </div>
+            
+            <li className="pt-6 border-t border-white/10 flex flex-wrap gap-3">
+               {languages.map(l => (
+                 <button key={l.code} onClick={() => {i18n.changeLanguage(l.code); setIsMobileOpen(false)}} className={`px-4 py-2 border rounded-lg font-bold text-xs ${i18n.language === l.code ? 'bg-cyan-500/10 border-cyan-500 text-cyan-400' : 'border-white/10 text-zinc-500'}`}>
+                   {l.flag} {l.name}
+                 </button>
+               ))}
+            </li>
+          </ul>
         </div>
       </div>
-    </>
+    </header>
   );
 };
 
