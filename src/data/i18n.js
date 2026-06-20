@@ -84,8 +84,8 @@ i18n
 
           // --- Hero Section ---
           "hero_title": "100% Free for Bangladeshi Origin",
-          "hero_subtitle": "Get ready for the jobs & entrepreneur of Present & Future",
-          "hero_btn_success": "Start Becoming Great / Successful",
+          "hero_subtitle": "Get Ready for the Jobs & Entrepreneur of Present & Future",
+          "hero_btn_success": "Start Becoming Great",
           "hero_btn_explore": "Explore Courses",
           "hero_btn_learn": "Learn More",
 

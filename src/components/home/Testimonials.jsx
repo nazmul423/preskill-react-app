@@ -10,14 +10,14 @@ const Testimonials = () => {
       name: "Rafiqul Islam",
       role: t('testi_role_cloud'), 
       company: "Google",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRvarYMiYAp8HfDjwB1MGO_Go11tPBesmdZkt2nDF6Yw&s=10",
       text: t('testi_text_1')
     },
     {
       name: "Farhana Yasmin",
       role: t('testi_role_cyber'),
       company: "Amazon",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8DEldq_KDyA-I7fYE4OrmylPnyCvADSzSPEWylAVHvA&s=10",
       text: t('testi_text_2')
     },
     {
@@ -31,7 +31,7 @@ const Testimonials = () => {
       name: "Nusrat Jahan",
       role: t('testi_role_data'),
       company: "TigerIT Bangladesh",
-      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6akHJKPR-kkqVPbre2IxCtx1HsLTo1EDmbjwJyWorZg&s=10",
       text: t('testi_text_4')
     }
   ];

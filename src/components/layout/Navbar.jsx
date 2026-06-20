@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import navLinks from "../../data/navLinks";
-import ImgBd from "../../assets/bd.png";
+import ImgBd from "../../assets/download-Photoroom.png"
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -75,7 +75,7 @@ const Navbar = () => {
             <img
               src={ImgBd}
               alt="logo"
-              className="w-8 h-8 lg:w-10 lg:h-10 object-contain"
+              className="w-8 h-8 lg:w-12 lg:h-14 object-contain"
             />
             <Link
               to="/"

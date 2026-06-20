@@ -9,22 +9,22 @@ const TeachersSection = () => {
     { 
       name: "Tanvir Ahmed", 
       role: t('role_ai'), 
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRH95R9E6yikzUWdx2wBaFt7i8oYa4P59a7eHiuHxtH7G86A4S3flM6U4&s=10" 
     },
     { 
       name: "Nusrat Jahan", 
       role: t('role_cyber'), 
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" 
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicsuKyjetAgNQa06XkHVYCJ5XXB9xhopYBGXxEG1KEw&s=10" 
     },
     { 
       name: "Faisal Rahman", 
       role: t('role_software'), 
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" 
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFpSUe7WEW-UvrYxu4L9aYN7VFeG4zFCjphKrKEJnX6A&s=10" 
     },
     { 
       name: "Sumaiya Khan", 
       role: t('role_data'), 
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" 
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc96wBbitEsZgOLA9dHhlAYwpIBWP-EPlqMJ7lGqIJRQ&s=10" 
     },
   ];
 

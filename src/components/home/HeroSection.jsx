@@ -33,8 +33,7 @@ const HeroSection = () => {
   {t('hero_title')}
 </h1>
 
-        {/* সাবটাইটেল: লাইট মোডে স্লেট-৮০০ এবং ডার্ক মোডে হালকা সাদা */}
-      <p className="mt-6 text-white text-xl md:text-2xl max-w-5xl font-bold leading-relaxed transition-colors duration-500">
+  <p className="mt-6 text-white-800 dark:text-slate-100 text-xl md:text-2xl max-w-5xl font-bold leading-relaxed transition-colors duration-500">
   {t('hero_subtitle')}
 </p>
 
