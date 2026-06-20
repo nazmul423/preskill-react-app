@@ -9,8 +9,8 @@ const Contact = () => {
         {/* Contact Info Cards */}
         {[
           { icon: Mail, label: "Email Us", val: "info@prefuture.skill" },
-          { icon: Phone, label: "Call Us", val: "+1 (555) 000-TECH" },
-          { icon: MapPin, label: "Location", val: "Innovation Hub, SF" }
+          { icon: Phone, label: "Call Us", val: "+8801727642607" },
+          { icon: MapPin, label: "Location", val: "Innovation Hub, Manikganj" }
         ].map((item, i) => (
           // কার্ডের ব্যাকগ্রাউন্ড ও বর্ডার লাইট মোডের জন্য ডাইনামিক করা হয়েছে
           <div key={i} className="p-8 rounded-2xl bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 text-center hover:border-cyan-500/30 transition-all shadow-sm dark:shadow-none">

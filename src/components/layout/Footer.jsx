@@ -81,7 +81,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-4 text-slate-600 dark:text-zinc-500 text-sm group cursor-pointer hover:text-cyan-600 dark:hover:text-white transition-colors">
                 <Phone size={20} className="text-cyan-500 shrink-0" />
-                <span>+880 1712-345678</span>
+                <span>+88 01727642607 </span>
               </li>
             </ul>
           </div>
