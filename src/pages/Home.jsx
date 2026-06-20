@@ -7,10 +7,13 @@ import CompanyPartners from '../components/home/CompanyPartners';
 
 const Home = ({ onEnroll, enrolledIds, courses }) => {
   return (
-   <div className="min-h-screen bg-[#020617] text-white">
+    // মেইন কন্টেইনার: লাইট মোডে সাদা (bg-white) এবং টেক্সট কালো (text-slate-900) হবে
+    // ডার্ক মোডে আপনার সেই আগের কালার এবং সাদা টেক্সট থাকবে
+    <div className="min-h-screen bg-white dark:bg-[#020617] text-slate-900 dark:text-white transition-colors duration-500">
+      
       <HeroSection />
       
-      {/* Home page-এ আমরা শুধু জনপ্রিয় কোর্সগুলো দেখাচ্ছি */}
+      {/* Popular Courses Section */}
       <Courses 
         onEnroll={onEnroll} 
         enrolledIds={enrolledIds} 
@@ -18,10 +21,12 @@ const Home = ({ onEnroll, enrolledIds, courses }) => {
         limit={8} 
         showSeeAll={true} 
       />
+
       <TeachersSection />
       <Testimonials />
       <CompanyPartners/>
       <ContactSection />
+      
     </div>
   );
 };

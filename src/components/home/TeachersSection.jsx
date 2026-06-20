@@ -1,3 +1,4 @@
+
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../common/SectionTitle';
 
@@ -28,7 +29,8 @@ const TeachersSection = () => {
   ];
 
   return (
-    <section className="py-24 px-8 bg-[#020617]">
+    // মেইন সেকশন: লাইট মোডে সাদা (bg-white), ডার্ক মোডে ডার্ক ব্লু
+    <section className="py-24 px-8 bg-white dark:bg-[#020617] transition-colors duration-500">
       <div className="max-w-7xl mx-auto">
         <SectionTitle 
           subtitle={t('mentors_subtitle')} 
@@ -40,9 +42,11 @@ const TeachersSection = () => {
           {teachers.map((t, i) => (
             <div key={i} className="text-center group cursor-pointer flex flex-col items-center">
               <div className="relative w-32 h-32 md:w-36 md:h-36 mb-8">
-                <div className="absolute inset-0 bg-cyan-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                {/* হোভার গ্লো ইফেক্ট */}
+                <div className="absolute inset-0 bg-cyan-500/10 dark:bg-cyan-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
-                <div className="relative w-full h-full bg-slate-800 rounded-full border-2 border-white/10 group-hover:border-cyan-500 group-hover:scale-105 transition-all duration-500 overflow-hidden shadow-2xl">
+                {/* ইমেজ সার্কেল: লাইট মোডে হালকা স্লেট বর্ডার */}
+                <div className="relative w-full h-full bg-slate-100 dark:bg-slate-800 rounded-full border-2 border-slate-200 dark:border-white/10 group-hover:border-cyan-500 group-hover:scale-105 transition-all duration-500 overflow-hidden shadow-xl dark:shadow-2xl">
                   <img 
                     src={t.image} 
                     alt={t.name} 
@@ -51,16 +55,18 @@ const TeachersSection = () => {
                 </div>
               </div>
 
-              <h4 className="text-white font-bold uppercase text-[13px] tracking-widest group-hover:text-cyan-400 transition-colors">
+              {/* নাম: লাইট মোডে স্লেট-৯০০ এবং ডার্ক মোডে সাদা */}
+              <h4 className="text-slate-900 dark:text-white font-bold uppercase text-[13px] tracking-widest group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
                 {t.name}
               </h4>
               
-              {/* এখানে ভুল ছিল: p ট্যাগ শেষ করতে হবে </p> দিয়ে */}
-              <p className="text-slate-500 text-[10px] mt-2 font-black uppercase tracking-tighter">
+              {/* রোল: লাইট মোডে স্লেট-৬০০ */}
+              <p className="text-slate-600 dark:text-slate-500 text-[10px] mt-2 font-black uppercase tracking-tighter transition-colors duration-300">
                 {t.role}
               </p>
               
-              <div className="w-8 h-[1px] bg-white/10 mx-auto mt-4 group-hover:w-16 group-hover:bg-cyan-500 transition-all duration-500" />
+              {/* ডেকোরেটিভ লাইন: লাইট মোডে স্লেট-২০০ */}
+              <div className="w-8 h-[1px] bg-slate-200 dark:bg-white/10 mx-auto mt-4 group-hover:w-16 group-hover:bg-cyan-500 transition-all duration-500" />
             </div>
           ))}
         </div>

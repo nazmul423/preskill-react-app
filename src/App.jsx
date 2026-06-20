@@ -1,12 +1,10 @@
-// App.js
 import { useState } from 'react';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import AppRouter from './routes/Router'; 
+import AppRouter from './routes/Router';
 import coursesData from './data/courseData';
 import Topbar from './components/layout/Topbar';
- import BottomContactBar from './components/common/BottomContactBar';
-
+import BottomContactBar from './components/common/BottomContactBar';
 
 function App() {
   const [enrolledIds, setEnrolledIds] = useState([]);
@@ -18,24 +16,23 @@ function App() {
   };
 
   return (
-    <>
-    <Topbar/>
+    <div className="min-h-screen bg-white text-slate-900 dark:bg-[#030712] dark:text-slate-200 transition-colors duration-300">
+      <Topbar />
+
       <Navbar />
-      
-      {/* এখান থেকে Courses সেকশনটি সরিয়ে দেওয়া হয়েছে */}
-      
-     <main className="pt-[100px]">
+
+      <main className="pt-[100px]">
         <AppRouter
           onEnroll={handleEnroll}
           enrolledIds={enrolledIds}
           courses={coursesData}
         />
       </main>
-      
 
       <Footer />
-       <BottomContactBar />
-    </>
+
+      <BottomContactBar />
+    </div>
   );
 }
 

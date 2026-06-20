@@ -1,19 +1,31 @@
 @import "tailwindcss";
 
+/* --- এটি Tailwind v4 এ ক্লাস-বেসড ডার্ক মোড চালু করার জন্য --- */
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@tailwind utilities;
+
+/* ডার্ক এবং লাইট মোডের ট্রানজিশন স্মুথ করার জন্য */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 @layer base {
   body {
-    @apply bg-[#030712] text-slate-200 antialiased;
+    /* লাইট মোডে সাদা এবং ডার্ক মোডে ডার্ক ব্লু হবে */
+    @apply bg-white text-slate-900 dark:bg-[#030712] dark:text-slate-200 antialiased;
     font-family: 'Inter', sans-serif;
   }
 }
 
-.hero-gradient-overlay {
-  background: linear-gradient(to right, rgba(3, 7, 18, 0.9) 20%, rgba(3, 7, 18, 0.4) 60%, rgba(3, 7, 18, 0.1) 100%);
+/* আপনার বাকি সব কোড (ড্রপডাউন, গ্লাস নেভ) এর নিচে থাকবে... */
+.glass-nav {
+  @apply bg-white/70 dark:bg-[#030712]/70 backdrop-blur-xl border-b border-gray-200 dark:border-white/5;
 }
 
-.glass-nav {
-  @apply bg-[#030712]/70 backdrop-blur-xl border-b border-white/5;
+.menu-container {
+  @apply bg-white dark:bg-[#111827] border border-gray-200 dark:border-white/10 min-w-[240px] shadow-2xl;
 }
 
 .ai-card {
