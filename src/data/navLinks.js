@@ -401,26 +401,7 @@ const navLinks = [
 
 {
   name: "Global Language",
-  children: [
-    {
-      name: "Speak Globally",
-      children: [
-        { name: "Business Articulation", path: "/comm/business" },
-        { name: "IELTS & PTE Mastery", path: "/comm/ielts" },
-        { name: "Cross-Cultural Networking", path: "/comm/networking" },
-        { name: "Global Accent Neutralization", path: "/comm/accent" },
-      ],
-    },
-    {
-      name: "Work Globally", 
-      children: [
-        { name: "Remote Work Readiness", path: "/work/remote" },
-        { name: "High-End Freelancing", path: "/work/freelance" },
-        { name: "Global Resume & Branding", path: "/work/branding" },
-        { name: "Digital Nomad Blueprint", path: "/work/nomad" },
-      ],
-    },
-  ],
+  path: "/global-language",
 },
 { name: "Demo", path: "/courses" },
 { name: "Contact", path: "/contact" },

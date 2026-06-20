@@ -8,6 +8,7 @@ import Expertise from '../pages/canal/Expertise';
 import OngoingProjects from '../pages/canal/OngoingProjects';
 import ProjectAnalysis from '../pages/canal/ProjectAnalysis';
 import Implementation from '../pages/canal/Implementation';
+import GlobalLanguage from '../pages/canal/GlobalLanguage';
 
 
 const AppRouter = ({ onEnroll, enrolledIds, courses }) => {
@@ -42,6 +43,7 @@ const AppRouter = ({ onEnroll, enrolledIds, courses }) => {
       <Route path="/canal/projects" element={<OngoingProjects />} />
       <Route path="/canal/analysis" element={<ProjectAnalysis />} />
       <Route path="/canal/implement" element={<Implementation />} />
+      <Route path="/global-language" element={<GlobalLanguage />} />
 
       <Route path="/about" element={<About />} />
       <Route path="/teachers" element={<Teachers />} />

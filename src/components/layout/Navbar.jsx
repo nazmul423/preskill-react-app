@@ -69,7 +69,7 @@ const Navbar = () => {
       </div>
 
       {/* --- ২. মেইন নেভিবার --- */}
-      <nav className="bg-white dark:bg-[#0b101b]/95 backdrop-blur-md border-b border-gray-200 dark:border-white/10 h-20 flex items-center transition-colors duration-300">
+      <nav className="bg-white dark:bg-[#020617]/95 backdrop-blur-md border-b border-gray-200 dark:border-white/10 h-20 flex items-center transition-colors duration-300">
         <div className="w-full max-w-[1550px] mx-auto flex items-center justify-between lg:justify-start h-full relative px-2 lg:px-4">
           <div className="flex items-center gap-1.5 shrink-0 lg:mr-1">
             <img
@@ -153,7 +153,7 @@ const Navbar = () => {
                                         <div className="flex justify-between items-center">
                                           <Link
                                             to={deepItem.path || "#"}
-                                            className="text-[11px] text-gray-500 dark:text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 block whitespace-nowrap"
+                                            className="text-[11px] text-black dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 block whitespace-nowrap"
                                           >
                                             {t(deepItem.name)}
                                           </Link>

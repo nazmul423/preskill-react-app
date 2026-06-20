@@ -11,7 +11,25 @@ const TeachersSection = () => {
     { name: "Faisal Rahman", role: "DevOps Engineer", img: "https://randomuser.me/api/portraits/men/3.jpg" },
     { name: "Sumaiya Khan", role: "Data Scientist", img: "https://randomuser.me/api/portraits/women/3.jpg" },
     { name: "Mehidi Hasan", role: "Full Stack Developer", img: "https://randomuser.me/api/portraits/men/4.jpg" },
-    { name: "Tasmia Haque", role: "Blockchain Expert", img: "https://randomuser.me/api/portraits/women/4.jpg" }
+    { name: "Tasmia Haque", role: "Blockchain Expert", img: "https://randomuser.me/api/portraits/women/4.jpg" },
+    {
+  name: "Md. Mafidul I.",
+  role: ("role_sap"),
+  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHid7oS_dhXA4FLdrD5ZWJXV1BI3RaUPnqVEyptKhL0w&s=10"
+},
+{
+  name: "Karim",
+  role: ("role_workday"),
+  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13nv4vmoNUxi5_ouMJ7Hf_2Z40QvY8VjAcV0Zs7ToNg&s=10"
+},
+{
+  name: "Kamal",
+  role: ("role_blueprism"),
+  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPlmKB4HfvBoC-PL3CcmJx3UFUEeUjJFOPzElIGg-8tw&s=10"
+}
+    
+    
+    
   ];
 
   return (

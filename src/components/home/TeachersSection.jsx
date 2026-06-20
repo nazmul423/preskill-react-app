@@ -26,6 +26,7 @@ const TeachersSection = () => {
       role: t('role_data'), 
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc96wBbitEsZgOLA9dHhlAYwpIBWP-EPlqMJ7lGqIJRQ&s=10" 
     },
+    
   ];
 
   return (
