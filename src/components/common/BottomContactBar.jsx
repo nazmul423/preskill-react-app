@@ -8,7 +8,7 @@ const BottomContactBar = () => {
         
         {/* --- LEFT SIDE: WHATSAPP BUTTON --- */}
         <a 
-          href="https://wa.me/8801700000000" // আপনার নম্বরটি এখানে দিন
+          href="https://wa.me/01727642607" // আপনার নম্বরটি এখানে দিন
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] px-4 h-full transition-all group shrink-0"

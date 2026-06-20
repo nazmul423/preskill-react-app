@@ -17,7 +17,7 @@ i18n
           "Find a Mentor": "Find a Mentor",
           "Experts & Beneficiaries": "Experts & Beneficiaries",
           "Stunning Innovation": "Stunning Innovation",
-          "Global Career Bridge": "Global Career Bridge",
+          "Global Language": "Global Language",
           "Courses": "Courses",
           "Contact": "Contact",
 
@@ -42,9 +42,16 @@ i18n
           "Smart Farming": "Smart Farming", "Hydroponics": "Hydroponics", "Business Articulation": "Business Articulation",
           "welcome_msg": "Future Ready. Skill Smart. Stay Ahead.",
           "expert_programs": "Expert Programs",
-          "enroll_now": "Enroll Now",
-          "enrolled": "Enrolled",
+          "enroll_now": "Join Us",
+          "enrolled": "Joined",
           "see_all_courses": "See All Courses",
+          "Explore Skills": "Explore Skills",
+"Canal to Crop": "Canal to Crop",
+"Expertise": "Expertise",
+"Ongoing Projects": "Ongoing Projects",
+"Project Analysis": "Project Analysis",
+"Implementation": "Implementation",
+"Demo": "Demo",
           
           // --- Experts & Beneficiaries (EN) ---
 "Experts": "Experts",
@@ -125,6 +132,16 @@ i18n
 "footer_rights": "© 2024 PreFuture Skill Foundation • Empowering Excellence",
 "footer_privacy": "Privacy Policy",
 "footer_terms": "Terms of Service",
+// --- English (en) ব্লকের ভেতর ---
+"ai_badge": "Guided Learning",
+"ai_desc": "Provide your details, AI will suggest the best career path and future income potential.",
+"your_name": "Your Name",
+"your_interest": "Your Interest",
+"generate_result": "Generate Result",
+"ai_waiting": "Submit your info to see the real-time AI report.",
+"impact_msg_start": "If 1000 professionals like you are created, they will contribute",
+"impact_msg_end": "to the national economy annually.",
+"crore": "Crore",
   
       
           
@@ -133,6 +150,17 @@ i18n
       },
       bn: {
         translation: {
+          
+// --- বাংলা (bn) ব্লকের ভেতর ---
+"ai_badge": "নির্দেশিত শিক্ষা",
+"ai_desc": "আপনার তথ্য দিন, AI আপনাকে বলবে আপনার জন্য কোন কোর্সটি সেরা এবং ভবিষ্যতে আপনার ইনকাম কেমন হতে পারে।",
+"your_name": "আপনার নাম",
+"your_interest": "আপনার আগ্রহ",
+"generate_result": "রেজাল্ট জেনারেট করুন",
+"ai_waiting": "আপনার তথ্য সাবমিট করলে এখানে রিপোর্ট দেখা যাবে।",
+"impact_msg_start": "আপনার মতো ১০০০ জন দক্ষ কর্মী তৈরি হলে জাতীয় অর্থনীতিতে বছরে",
+"impact_msg_end": "টাকা যোগ হবে।",
+"crore": "কোটি",
            // Level 1
           "Present Skill All": "প্রেজেন্ট স্কিল অল",
           "Newest Skill": "নতুন স্কিল",
@@ -167,6 +195,15 @@ i18n
           "enroll_now": "এখনই ভর্তি হোন",
           "enrolled": "ভর্তি সম্পন্ন",
           "see_all_courses": "সব কোর্স দেখুন",
+
+          "Explore Skills": "দক্ষতা অন্বেষণ",
+"Canal to Crop": "ক্যানাল টু ক্রপ",
+"Expertise": "বিশেষজ্ঞ জ্ঞান",
+"Ongoing Projects": "চলমান প্রকল্পসমূহ",
+"Project Analysis": "প্রকল্প বিশ্লেষণ",
+"Implementation": "বাস্তবায়ন কৌশল",
+"Global Language": "গ্লোবাল ল্যাঙ্গুয়েজ",
+"Demo": "ডেমো",
 
           // --- Experts & Beneficiaries (BN) ---
 "Experts": "বিশেষজ্ঞ",
@@ -282,6 +319,14 @@ i18n
     // Level 4
     "Fusion SCM": "Fusion SCM", "Vlocity": "Vlocity", "Azure AZ": "Azure AZ",
     "Smart Farming": "Agriculture intelligente", "Hydroponics": "Hydroponie", "Business Articulation": "Articulation commerciale",
+    "Explore Skills": "Explorer les compétences",
+"Canal to Crop": "Canal à la Récolte",
+"Expertise": "Expertise",
+"Ongoing Projects": "Projets en cours",
+"Project Analysis": "Analyse de projet",
+"Implementation": "Mise en œuvre",
+"Global Language": "Langue mondiale",
+"Demo": "Démo",
 
           "Experts": "Experts",
 "Beneficiaries": "Bénéficiaires",
@@ -393,6 +438,15 @@ i18n
     // Level 4
     "Fusion SCM": "Fusion SCM", "Vlocity": "Vlocity", "Azure AZ": "Azure AZ",
     "Smart Farming": "スマート農業", "Hydroponics": "水耕栽培", "Business Articulation": "ビジネスアーティキュレーション",
+
+    "Explore Skills": "スキルを探索する",
+"Canal to Crop": "カナル・トゥ・クロップ",
+"Expertise": "専門知識",
+"Ongoing Projects": "進行中のプロジェクト",
+"Project Analysis": "プロジェクト分析",
+"Implementation": "実装プロセス",
+"Global Language": "グローバル言語",
+"Demo": "デモ",
 
           "Experts": "専門家",
 "Beneficiaries": "受益者",
@@ -577,7 +631,14 @@ i18n
       "footer_rights": "© 2024 PreFuture Skill Foundation • Exzellenz fördern",
       "footer_privacy": "Datenschutzrichtlinie",
       "footer_terms": "Nutzungsbedingungen",
-      
+      "Explore Skills": "Fähigkeiten erkunden",
+"Canal to Crop": "Kanal zur Ernte",
+"Expertise": "Fachkompetenz",
+"Ongoing Projects": "Laufende Projekte",
+"Project Analysis": "Projektanalyse",
+"Implementation": "Implementierung",
+"Global Language": "Globale Sprache",
+"Demo": "Demo",
       
       
     }
