@@ -1,8 +1,7 @@
-// src/data/teachersData.js
-export const teachers = [
+export   const teachers = [
     { name: "Tanvir Ahmed", role: "AI & ML Specialist", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeodzrZHQOrt6dES91dgJFxX5N72IAeuanSuEKK6wHXQ&s=10" },
     { name: "Nusrat Jahan", role: "Cyber Security Lead", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz8kcVirgFuevGsWoWhZRw0sB_gC2MIUx99ZyzQ-1h-w&s=10" },
-    { name: "Ariful Islam", role: "Cloud Architect", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Oyd8iExQ9v0uwKbp0IXVVAAwa5CdoV9-3bCsUqlJ_g&s=10" },
+    { name: "Ariful Islam", role: "Cloud Architect", img: "hhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Oyd8iExQ9v0uwKbp0IXVVAAwa5CdoV9-3bCsUqlJ_g&s=10" },
     { name: "Sadia Afrin", role: "UI/UX Design Lead", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIY31vSya_3etxF53u-q7Drqnn4J0dLmn7pp1c9nvHw&s=10" },
     { name: "Faisal Rahman", role: "DevOps Engineer", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32muZIGkmDjDKSdwwyBnIlLWc87QachC6gQQdQXQTnA&s=10" },
     { name: "Sumaiya Khan", role: "Data Scientist", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhW4WTUsQju84PdpPAomMtnmUoApLBywxINN8gMhcOeA&s=10" },
@@ -27,5 +26,3 @@ export const teachers = [
     
     
   ];
-
-export default teachers; // এই লাইনটি অবশ্যই যোগ করুন

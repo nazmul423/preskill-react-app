@@ -4,28 +4,28 @@ import SectionTitle from '../components/common/SectionTitle';
 const TeachersSection = () => {
   // ৮ জন মেন্টরের ডাটা
   const teachers = [
-    { name: "Tanvir Ahmed", role: "AI & ML Specialist", img: "https://randomuser.me/api/portraits/men/1.jpg" },
-    { name: "Nusrat Jahan", role: "Cyber Security Lead", img: "https://randomuser.me/api/portraits/women/1.jpg" },
-    { name: "Ariful Islam", role: "Cloud Architect", img: "https://randomuser.me/api/portraits/men/2.jpg" },
-    { name: "Sadia Afrin", role: "UI/UX Design Lead", img: "https://randomuser.me/api/portraits/women/2.jpg" },
-    { name: "Faisal Rahman", role: "DevOps Engineer", img: "https://randomuser.me/api/portraits/men/3.jpg" },
-    { name: "Sumaiya Khan", role: "Data Scientist", img: "https://randomuser.me/api/portraits/women/3.jpg" },
-    { name: "Mehidi Hasan", role: "Full Stack Developer", img: "https://randomuser.me/api/portraits/men/4.jpg" },
-    { name: "Tasmia Haque", role: "Blockchain Expert", img: "https://randomuser.me/api/portraits/women/4.jpg" },
+    { name: "Tanvir Ahmed", role: "AI & ML Specialist", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeodzrZHQOrt6dES91dgJFxX5N72IAeuanSuEKK6wHXQ&s=10" },
+    { name: "Nusrat Jahan", role: "Cyber Security Lead", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz8kcVirgFuevGsWoWhZRw0sB_gC2MIUx99ZyzQ-1h-w&s=10" },
+    { name: "Ariful Islam", role: "Cloud Architect", img: "hhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Oyd8iExQ9v0uwKbp0IXVVAAwa5CdoV9-3bCsUqlJ_g&s=10" },
+    { name: "Sadia Afrin", role: "UI/UX Design Lead", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIY31vSya_3etxF53u-q7Drqnn4J0dLmn7pp1c9nvHw&s=10" },
+    { name: "Faisal Rahman", role: "DevOps Engineer", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32muZIGkmDjDKSdwwyBnIlLWc87QachC6gQQdQXQTnA&s=10" },
+    { name: "Sumaiya Khan", role: "Data Scientist", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhW4WTUsQju84PdpPAomMtnmUoApLBywxINN8gMhcOeA&s=10" },
+    { name: "Mehidi Hasan", role: "Full Stack Developer", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIYTC0A6-8I16OkGPLGTaP6bFd_kxMxH7WLfFaQgsllg&s=10" },
+    { name: "Tasmia Haque", role: "Blockchain Expert", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT10cYJoTxyvoQCE8G72UdZhS1VWYZgujiFhAfDfg5lrw&s=10" },
     {
   name: "Md. Mafidul I.",
   role: ("role_sap"),
-  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHid7oS_dhXA4FLdrD5ZWJXV1BI3RaUPnqVEyptKhL0w&s=10"
+  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQxHa0yeJU9592LYTvy_iczW2EwYDkbx4AaMbvKgHzfw&s=10"
 },
 {
   name: "Karim",
   role: ("role_workday"),
-  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13nv4vmoNUxi5_ouMJ7Hf_2Z40QvY8VjAcV0Zs7ToNg&s=10"
+  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8FwlHuCiNYWrh_yPA8yUZVM9Fgyq-qA81vYVKk-2FNQ&s=10"
 },
 {
   name: "Kamal",
   role: ("role_blueprism"),
-  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPlmKB4HfvBoC-PL3CcmJx3UFUEeUjJFOPzElIGg-8tw&s=10"
+  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63O-Tn2zTLTzSW3s2MWqJhz1P-FeyeGI5IqrMgg54cg&s=10"
 }
     
     
