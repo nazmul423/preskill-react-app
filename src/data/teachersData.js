@@ -1,6 +1,6 @@
 // src/data/teachersData.js
 export const teachers = [
-    { name: "Tanvir Ahmed", role: "AI & ML Specialist", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeodzrZHQOrt6dES91dgJFxX5N72IAeuanSuEKK6wHXQ&s=10" },
+    { name: "Md. Mafidul I.", role: " HCM | API | Integration | FinanceAI ", img: "https://www.upwork.com/profile-portraits/c1b__4QuMTGcKHhx5pPlMD4JQ6UXgDxCQa_ow6xbTINjIv8isL0v7ru7kk5NDfuEgq" },
     { name: "Nusrat Jahan", role: "Cyber Security Lead", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz8kcVirgFuevGsWoWhZRw0sB_gC2MIUx99ZyzQ-1h-w&s=10" },
     { name: "Ariful Islam", role: "Cloud Architect", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Oyd8iExQ9v0uwKbp0IXVVAAwa5CdoV9-3bCsUqlJ_g&s=10" },
     { name: "Sadia Afrin", role: "UI/UX Design Lead", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIY31vSya_3etxF53u-q7Drqnn4J0dLmn7pp1c9nvHw&s=10" },

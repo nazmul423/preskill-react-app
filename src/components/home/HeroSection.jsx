@@ -13,17 +13,10 @@ const HeroSection = () => {
         src={PreSkillImg}
         alt="PreSkill Banner"
         className="absolute inset-0 w-full h-full object-cover 
-          opacity-80 
+          opacity-100 
           transition-all duration-700"
       />
 
-      {/* ডাইনামিক ওভারলে: ডার্ক মোডের সেই সিগনেচার ইফেক্ট সব মোডে রাখা হয়েছে যাতে ইমেজ একই দেখায় */}
-      <div
-        className="absolute inset-0
-        bg-gradient-to-r from-black/60 via-black/20 to-transparent
-        dark:from-[#030712]/80 dark:via-[#030712]/40 dark:to-transparent
-        z-10 backdrop-blur-[1px] transition-all duration-700"
-      ></div>
 
       {/* Content Area */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20">
@@ -33,7 +26,7 @@ const HeroSection = () => {
   {t('hero_title')}
 </h1>
 
-  <p className="mt-6 text-white-800 dark:text-slate-100 text-xl md:text-2xl max-w-5xl font-bold leading-relaxed transition-colors duration-500">
+ <p className="mt-6 text-white text-xl md:text-2xl max-w-5xl font-bold leading-relaxed transition-colors duration-500">
   {t('hero_subtitle')}
 </p>
 

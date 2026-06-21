@@ -1,6 +1,6 @@
 const navLinks = [
   {
-    name: "Explore Skills",
+    name: "PreFuture",
     children: [
       {
         name: "Present Skill All",
@@ -399,10 +399,6 @@ const navLinks = [
   ],
 },
 
-{
-  name: "Global Language",
-  path: "/global-language",
-},
 { name: "Demo", path: "/courses" },
 { name: "Contact", path: "/contact" },
 ];

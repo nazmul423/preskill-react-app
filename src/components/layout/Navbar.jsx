@@ -70,8 +70,7 @@ const Navbar = () => {
 
       {/* --- ২. মেইন নেভিবার --- */}
       <nav className="bg-white dark:bg-[#020617]/95 backdrop-blur-md border-b border-gray-200 dark:border-white/10 h-20 flex items-center transition-colors duration-300">
-        <div className="w-full max-w-[1550px] mx-auto flex items-center justify-between lg:justify-start h-full relative px-2 lg:px-4">
-          <div className="flex items-center gap-1.5 shrink-0 lg:mr-1">
+<div className="w-full max-w-[1400px] mx-auto flex items-center justify-between h-full px-6 lg:px-8">          <div className="flex items-center gap-1.5 shrink-0 lg:mr-1">
             <img
               src={ImgBd}
               alt="logo"
@@ -85,8 +84,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden lg:flex items-center justify-center flex-1 gap-5 px-4 h-full">
-            {navLinks.map((link) => (
+<div className="hidden lg:flex items-center justify-center flex-1 gap-6 px-8 h-full">            {navLinks.map((link) => (
               <div
                 key={link.name}
                 className="relative group/l1 h-20 flex items-center"
@@ -199,9 +197,8 @@ const Navbar = () => {
             ))}
           </div>
 
-          <div className="lg:ml-auto flex items-center gap-1 lg:gap-2 h-full shrink-0">
-            {/* Theme Toggle Button */}
-            <button
+    <div className="flex items-center relative h-full">
+      <button
               onClick={toggleTheme}
               className="p-2 rounded-xl bg-gray-100 dark:bg-white/5 text-slate-600 dark:text-cyan-400 hover:scale-110 transition-all shadow-sm"
             >
