@@ -1,15 +1,85 @@
 export const coursesData = [
   // 💻 Enterprise Technology
-  { id: 1, titleEn: "Workday", titleBn: "ওয়ার্কডে", categoryEn: "Enterprise Technology", categoryBn: "এন্টারপ্রাইজ টেকনোলজি", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8ZT-UDgLA86Xln3Gn-8eNXBv4eWPD5G1nQru17UKIw&s=10" },
-  { id: 2, titleEn: "SAP", titleBn: "এসএপি (SAP)", categoryEn: "Enterprise Technology", categoryBn: "এন্টারপ্রাইজ টেকনোলজি", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRGtZ2YnzAWRm3lsaSKzosDlfBRQ4ZgFqoIVxoipf3QQ&s=10" },
-  { id: 3, titleEn: "Oracle", titleBn: "ওরাকল", categoryEn: "Enterprise Technology", categoryBn: "এন্টারপ্রাইজ টেকনোলজি", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgobD_iaoEcoi-0Or9pLeUfdziRF1BG4ZW8TOKDJYDRg&s=10" },
-  { id: 4, titleEn: "Blue Prism", titleBn: "ব্লু প্রিজম", categoryEn: "Enterprise Technology", categoryBn: "এন্টারপ্রাইজ টেকনোলজি", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCqj3di_T05HcvDUcCafCbjjNQuNhvkS-9jVUFXlu_mA&s" },
-
-  // ☁️ Future Technology
-  { id: 5, titleEn: "AI (Artificial Intelligence)", titleBn: "এআই (কৃত্রিম বুদ্ধিমত্তা)", categoryEn: "Future Technology", categoryBn: "ফিউচার টেকনোলজি", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPdYprYRJHMWXziN9doaY5LNahEU1PLHfhbvNZShfmA&s=10" },
-  { id: 6, titleEn: "Cloud Computing", titleBn: "ক্লাউড কম্পিউটিং", categoryEn: "Future Technology", categoryBn: "ফিউচার টেকনোলজি", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPAe-ExqK_l94WD1YGt0yyOYfp3fUWU7g_1kzTJfx8BA&s=10" },
-  { id: 7, titleEn: "Cybersecurity", titleBn: "সাইবার সিকিউরিটি", categoryEn: "Future Technology", categoryBn: "ফিউচার টেকনোলজি", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhuJBoSEFh5CWpy66RJwf9SVSwQrWW9qnpydnWcOhpQw&s=10" },
-  { id: 8, titleEn: "Data Science", titleBn: "ডেটা সায়েন্স", categoryEn: "Future Technology", categoryBn: "ফিউচার টেকনোলজি", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBop9J6fmiCAkQJ-Jn7vEf_WssvoICiK55Y2_y8osBcQ&s=10" },
+{ 
+    id: 1, 
+    titleEn: "ServiceNow", 
+    titleBn: "সার্ভিসনাউ (ServiceNow)", 
+    categoryEn: "IT Service Management", 
+    categoryBn: "আইটি সার্ভিস ম্যানেজমেন্ট", 
+    image: "https://i0.wp.com/cloudfoundation.com/wp-content/uploads/2023/03/servicenow.jpg?resize=300%2C172&ssl=1",
+    type: "paid",
+    price: 3500
+  },
+  { 
+    id: 2, 
+    titleEn: "MuleSoft", 
+    titleBn: "মিউলসফট (MuleSoft)", 
+    categoryEn: "API Integration", 
+    categoryBn: "এপিআই ইন্টিগ্রেশন", 
+    image: "https://i0.wp.com/cloudfoundation.com/wp-content/uploads/2023/03/mulesoft.jpg?resize=300%2C172&ssl=1",
+    type: "paid",
+    price: 4000
+  },
+  { 
+    id: 3, 
+    titleEn: "Alteryx", 
+    titleBn: "অলটেরিক্স (Alteryx)", 
+    categoryEn: "Data Analytics", 
+    categoryBn: "ডেটা অ্যানালিটিক্স", 
+    image: "https://cloudfoundation.com/wp-content/uploads/2023/03/alteryx.jpg",
+    type: "free",
+    price: 0
+  },
+  { 
+    id: 4, 
+    titleEn: "Info MDM", 
+    titleBn: "ইনফো এমডিএম (Info MDM)", 
+    categoryEn: "Master Data Management", 
+    categoryBn: "মাস্টার ডেটা ম্যানেজমেন্ট", 
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCqj3di_T05HcvDUcCafCbjjNQuNhvkS-9jVUFXlu_mA&s",
+    type: "paid",
+    price: 4500
+  },
+  { 
+    id: 5, 
+    titleEn: "Tibco Spotfire", 
+    titleBn: "টিবকো স্পটফায়ার", 
+    categoryEn: "Data Visualization", 
+    categoryBn: "ডেটা ভিজ্যুয়ালাইজেশন", 
+    image: "https://cloudfoundation.com/wp-content/uploads/2023/03/tibcospotfire.jpg",
+    type: "free",
+    price: 0
+  },
+  { 
+    id: 6, 
+    titleEn: "Tableau", 
+    titleBn: "ট্যাবলিউ (Tableau)", 
+    categoryEn: "Data Visualization", 
+    categoryBn: "ডেটা ভিজ্যুয়ালাইজেশন", 
+    image: "https://cloudfoundation.com/wp-content/uploads/2023/03/tableu.jpg",
+    type: "paid",
+    price: 3000
+  },
+  { 
+    id: 7, 
+    titleEn: "PEGA", 
+    titleBn: "পেগা (PEGA)", 
+    categoryEn: "Business Process Automation", 
+    categoryBn: "বিজনেস প্রসেস অটোমেশন", 
+    image: "https://cloudfoundation.com/wp-content/uploads/2023/03/pega-1.jpg",
+    type: "free",
+    price: 0
+  },
+  { 
+    id: 8, 
+    titleEn: "BluePrism", 
+    titleBn: "ব্লু প্রিজম (BluePrism)", 
+    categoryEn: "RPA", 
+    categoryBn: "রোবোটিক প্রসেস অটোমেশন", 
+    image: "https://cloudfoundation.com/wp-content/uploads/2023/03/blueprism.jpg",
+    type: "paid",
+    price: 3800
+  },
 
   // ✈️ Aviation & Aerospace
   { id: 9, titleEn: "Aviation Management", titleBn: "এভিয়েশন ম্যানেজমেন্ট", categoryEn: "Aviation & Aerospace", categoryBn: "এভিয়েশন ও অ্যারোস্পেস", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp5lRInkowMgUz69oieLVe8YUofmPyjXTIiIrAtLW6WA&s=10" },
