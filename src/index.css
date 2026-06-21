@@ -78,11 +78,3 @@ html {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* src/index.css ফাইলের নিচে এটি যোগ করুন */
-
-/* যদি ভাষা বাংলা হয় তবে এই স্টাইলগুলো কাজ করবে */
-/* এটি সব জায়গার জন্য বাংলা ফিক্স করবে */
-[lang="bn"] {
-  letter-spacing: 0 !important;
-  text-transform: none !important;
-}

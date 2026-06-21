@@ -22,7 +22,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20">
 
         {/* টাইটেল: লাইট মোডে স্লেট-৯৫৬ (হাই কন্ট্রাস্ট) এবং ডার্ক মোডে সাদা */}
-       <h1 className="text-white dark:text-white text-4xl md:text-6xl font-black leading-tight max-w-6xl drop-shadow-lg transition-colors duration-500">
+       <h1 className="text-white dark:text-white text-4xl md:text-5xl font-black leading-tight drop-shadow-lg transition-colors duration-500">
   {t('hero_title')}
 </h1>
 
