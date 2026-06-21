@@ -21,14 +21,17 @@ const HeroSection = () => {
       {/* Content Area */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20">
 
-        {/* টাইটেল: লাইট মোডে স্লেট-৯৫৬ (হাই কন্ট্রাস্ট) এবং ডার্ক মোডে সাদা */}
-       <h1 className="text-white dark:text-white text-4xl md:text-5xl font-black leading-tight drop-shadow-lg transition-colors duration-500">
-  {t('hero_title')}
-</h1>
+  {/* টাইটেল: গ্লাস ইফেক্ট এবং ট্রান্সপারেন্ট টেক্সট */}
+  <h1 className="text-transparent bg-clip-text bg-gradient-to-br from-white via-white/90 to-white/40 text-4xl md:text-6xl font-bold shadow-2xl leading-tight drop-shadow-sm transition-all duration-500">
+    {t('hero_title')}
+  </h1>
 
- <p className="mt-6 text-white text-xl md:text-2xl max-w-5xl font-bold leading-relaxed transition-colors duration-500">
-  {t('hero_subtitle')}
-</p>
+  {/* সাবটাইটেল: ফ্রস্টেড লুক এবং হাই রিডাবিলিটি */}
+  <p className="mt-6 text-white/90 text-xl md:text-2xl max-w-5xl font-medium leading-relaxed transition-colors duration-500">
+    <span className="bg-white/10 px-2 py-1 rounded-md backdrop-blur-sm">
+      {t('hero_subtitle')}
+    </span>
+  </p>
 
         {/* ১. মেইন সাকসেস বাটন (সব মোডে একই প্রফেশনাল ডিজাইন) */}
         <button

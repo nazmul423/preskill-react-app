@@ -4,12 +4,15 @@ import { useTranslation } from 'react-i18next';
 
 const Courses = ({ courses, onEnroll, enrolledIds, limit, showSeeAll }) => {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation(); // i18n থেকে language ডিটেক্ট করার জন্য
   
+  
+  // বর্তমানে ভাষা কি বাংলা (bn)? এটা চেক করা হচ্ছে
+  const isBengali = i18n.language === 'bn';
+
   const displayedCourses = limit ? courses.slice(0, limit) : courses;
 
   return (
-    // মেইন সেকশন: লাইট মোডে সাদা, ডার্ক মোডে আপনার সেই আগের কালার
     <section className="py-24 px-6 max-w-7xl mx-auto transition-colors duration-500">
       {/* Section Title */}
       <div className="mb-14">
@@ -19,7 +22,7 @@ const Courses = ({ courses, onEnroll, enrolledIds, limit, showSeeAll }) => {
         <div className="w-20 h-1.5 bg-cyan-500 mt-4 rounded-full" />
       </div>
       
-      {/* Grid: ডিজাইন আগের মতোই থাকবে */}
+      {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {displayedCourses && displayedCourses.map(course => {
           const isEnrolled = enrolledIds.includes(course.id);
@@ -35,14 +38,15 @@ const Courses = ({ courses, onEnroll, enrolledIds, limit, showSeeAll }) => {
                   <img 
                     src={course.image} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 opacity-90 group-hover:opacity-100" 
-                    alt={course.title} 
+                    alt={isBengali ? course.titleBn : course.titleEn} 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 dark:from-[#0a101f] via-transparent to-transparent opacity-40" />
                 </div>
 
-                {/* Course Title */}
+                {/* Course Title - অটো ল্যাঙ্গুয়েজ সুইচ লজিক */}
                 <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-6 group-hover:text-cyan-500 transition-colors leading-tight h-14 line-clamp-2">
-                  {t(course.title)}
+                  {/* যদি ওয়েবসাইট বাংলায় থাকে তবে titleBn দেখাবে, নয়তো titleEn */}
+                  {isBengali ? course.titleBn : course.titleEn}
                 </h3>
               </div>
 
@@ -89,4 +93,4 @@ const Courses = ({ courses, onEnroll, enrolledIds, limit, showSeeAll }) => {
   );
 };
 
-export default Courses;
+export default Courses; 

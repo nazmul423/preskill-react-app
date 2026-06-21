@@ -31,6 +31,7 @@ i18n
           "Business Intelligence": "Business Intelligence",
           "DevOps": "DevOps",
           "Data Science": "Data Science",
+
           "RPA": "RPA",
           "Pega": "Pega",
           "More Courses": "More Courses",
@@ -391,6 +392,8 @@ i18n
           "partners_subtitle": "Carrières de rêve",
           "partners_title": "Nos étudiants travaillent chez",
           "partners_footer": "Autonomiser les talents bangladais pour les leaders mondiaux de l'industrie",
+          // French
+"PreFuture": "PréFutur",
           // --- French (fr) ---
           "contact_title": "Rejoignez le futur aujourd'hui",
           "contact_desc": "Prêt à transformer votre carrière ? Contactez-nous.",
@@ -513,6 +516,8 @@ i18n
           "partners_subtitle": "夢のキャリア",
           "partners_title": "卒業生の就職先",
           "partners_footer": "世界の業界リーダーのためにバングラデシュの才能を育成する",
+          // Japanese
+"PreFuture": "プレフューチャー",
 
           // --- Japanese (jp) ---"
           "contact_title": "今すぐ未来に参加しましょう",
@@ -647,6 +652,8 @@ i18n
           "Implementation": "Implementierung",
           "Global Language": "Globale Sprache",
           "Demo": "Demo",
+          // German
+"PreFuture": "PreZukunft",
 
 
         }
