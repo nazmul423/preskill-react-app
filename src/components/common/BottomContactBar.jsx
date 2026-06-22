@@ -1,4 +1,5 @@
-import { Mail, MessageCircle } from 'lucide-react';
+import { MessageCircle, Mail } from 'lucide-react'; // লিনিয়ার আইকন
+import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa'; // সোশ্যাল আইকন
 
 const BottomContactBar = () => {
   return (
@@ -16,6 +17,29 @@ const BottomContactBar = () => {
           <MessageCircle size={18} className="text-white fill-white/10 group-hover:scale-110 transition-transform" />
           <span className="text-[11px] font-black uppercase tracking-widest text-white">WhatsApp</span>
         </a>
+        
+         {/* Facebook Button */}
+  <a 
+    href="YOUR_FACEBOOK_LINK" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 bg-[#1877F2] hover:bg-[#145dbf] px-4 h-full transition-all group shrink-0 border-l border-white/10"
+  >
+   <FaFacebookF size={18} className="text-white group-hover:scale-110 transition-transform" />
+    <span className="text-[11px] font-black uppercase tracking-widest text-white">Facebook</span>
+  </a>
+
+  {/* LinkedIn Button */}
+  <a 
+    href="YOUR_LINKEDIN_LINK" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 bg-[#0077B5] hover:bg-[#005a8a] px-4 h-full transition-all group shrink-0 border-l border-white/10"
+  >
+  <FaLinkedinIn size={18} className="text-white group-hover:scale-110 transition-transform" />
+    <span className="text-[11px] font-black uppercase tracking-widest text-white">LinkedIn</span>
+  </a>
+        
 
         {/* --- RIGHT SIDE: COUNTRIES & EMAIL --- */}
         <div className="flex items-center gap-6 md:gap-10 overflow-x-auto no-scrollbar ml-6">

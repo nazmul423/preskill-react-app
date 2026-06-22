@@ -7,21 +7,27 @@ const HeroSection = () => {
   return (
     // মেইন কন্টেইনার: লাইট মোডে সাদা, ডার্ক মোডে নেভি ব্লু
     <section className="relative h-screen w-full overflow-hidden bg-black dark:bg-[#030712] transition-colors duration-700">
+{/* --- BACKGROUND WITH INTENSE SIDE DARKNESS (SAME TO SAME PHOTO) --- */}
 
-      {/* Background Image: লাইট এবং ডার্ক উভয় মোডে একদম একই (ডার্ক লুক) রাখা হয়েছে */}
-     {/* Background Image */}
-{/* Background Image */}
-<img
-  src={PreSkillImg}
-  alt="PreSkill Banner"
-  className="absolute inset-0 w-full h-full object-cover opacity-50"
+  <div className="absolute inset-0 z-0 bg-black">
+  {/* ১. মূল ব্যাকগ্রাউন্ড ইমেজ */}
+  <img
+    src={PreSkillImg}
+    alt="PreSkill Banner"
+    className="w-full h-full object-cover opacity-30" 
+  />
+
+ <div className="absolute left-0 top-0 w-[40%] h-[100%]
+  bg-gradient-to-r 
+  from-black 
+  via-black/95 
+  via-black/80 
+  to-transparent 
+  z-10" 
 />
 
-{/* Overlay */}
-<div className="absolute inset-0 bg-black/50 dark:bg-black/50"></div>
 
-
-      {/* Content Area */}
+</div>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20">
 
   {/* টাইটেল: গ্লাস ইফেক্ট এবং ট্রান্সপারেন্ট টেক্সট */}
