@@ -14,7 +14,7 @@ const HeroSection = () => {
 <img
   src={PreSkillImg}
   alt="PreSkill Banner"
-  className="absolute inset-0 w-full h-full object-cover opacity-30"
+  className="absolute inset-0 w-full h-full object-cover opacity-50"
 />
 
 {/* Overlay */}
