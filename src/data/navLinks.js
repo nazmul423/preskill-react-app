@@ -398,6 +398,17 @@ const navLinks = [
     },
   ],
 },
+{
+  name: "Language",
+  path: "#", // মেইন মেনুর জন্য পাথ
+  children: [
+    { code: "US", name: "English", flag: "us", path: "#" },
+    { code: "BD", name: "বাংলা", flag: "bd", path: "#" },
+    { code: "FR", name: "French", flag: "fr", path: "#" },
+    { code: "JP", name: "Japanese", flag: "jp", path: "#" },
+    { code: "DE", name: "German", flag: "de", path: "#" },
+  ],
+},
 
 { name: "Demo", path: "/courses" },
 { name: "Contact", path: "/contact" },

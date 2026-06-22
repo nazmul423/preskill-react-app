@@ -108,11 +108,21 @@ const Navbar = () => {
                       >
                         <div className="flex items-center justify-between px-5 py-3.5 hover:bg-gray-50 dark:hover:bg-zinc-900 cursor-pointer">
                           <Link
-                            to={sub.path || "#"}
-                            className="text-gray-800 dark:text-white text-[13px] font-bold w-full"
-                          >
-                            {t(sub.name)}
-                          </Link>
+  to={sub.path || "#"}
+  className="flex items-center gap-2 text-gray-800 dark:text-white text-[13px] font-bold w-full"
+>
+  {sub.flag && (
+   <img
+  src={`https://flagcdn.com/w40/${sub.flag}.png`}
+  alt={sub.name}
+  className={`w-5 object-cover ${
+    sub.flag === "jp" ? "bg-white/80 p-[1px]" : ""
+  }`}
+/>
+  )}
+
+  {t(sub.name)}
+</Link>
                           {sub.children && (
                             <ChevronRight
                               size={14}
