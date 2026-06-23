@@ -1,57 +1,56 @@
 import { useTranslation } from 'react-i18next';
-import PreSkillImg from '../../assets/image (1).png';
+import PreSkillImg from '../../assets/PreSkill.jpeg';
 
 const HeroSection = () => {
   const { t } = useTranslation();
 
   return (
     // মেইন কন্টেইনার: লাইট মোডে সাদা, ডার্ক মোডে নেভি ব্লু
-    <section className="relative h-screen w-full overflow-hidden bg-black dark:bg-[#030712] transition-colors duration-700">
-{/* --- BACKGROUND WITH INTENSE SIDE DARKNESS (SAME TO SAME PHOTO) --- */}
+    <section className="relative h-screen w-100% overflow-hidden dark:bg-[#030712] transition-colors duration-700">
+      {/* --- BACKGROUND WITH INTENSE SIDE DARKNESS (SAME TO SAME PHOTO) --- */}
 
-  <div className="absolute inset-0 z-0 bg-black">
-  {/* ১. মূল ব্যাকগ্রাউন্ড ইমেজ */}
-  <img
-    src={PreSkillImg}
-    alt="PreSkill Banner"
-    className="w-full h-full object-cover opacity-30" 
-  />
-
- <div className="absolute left-0 top-0 w-[40%] h-[100%]
-  bg-gradient-to-r 
-  from-black 
-  via-black/95 
-  via-black/80 
-  to-transparent 
-  z-10" 
-/>
+      <div className="">
+        {/* ১. মূল ব্যাকগ্রাউন্ড ইমেজ */}
+        <img
+          src={PreSkillImg}
+          alt="PreSkill Banner"
+          className="w-full h-full object-cover "
+        />
 
 
-</div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20">
 
-  {/* টাইটেল: গ্লাস ইফেক্ট এবং ট্রান্সপারেন্ট টেক্সট */}
-  <h1 className="text-transparent bg-clip-text bg-gradient-to-br from-white via-white/90 to-white/40 text-6xl md:text-6xl font-bold shadow-2xl leading-tight drop-shadow-sm transition-all duration-500">
-    {t('hero_title')}
-  </h1>
 
-  {/* সাবটাইটেল: ফ্রস্টেড লুক এবং হাই রিডাবিলিটি */}
-  <p className="mt-6 text-white/90 text-xl md:text-2xl max-w-5xl font-medium leading-relaxed transition-colors duration-500">
-    <span className="bg-white/10 px-2 py-1 rounded-md backdrop-blur-sm">
-      {t('hero_subtitle')}
-    </span>
-  </p>
+      </div>
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20 mt-40">
+
+        {/* টাইটেল: গ্লাস ইফেক্ট এবং ট্রান্সপারেন্ট টেক্সট */}
+        <h1 className="text-transparent
+         bg-clip-text bg-gradient-to-br from-white via-white/100 to-white/100 
+         text-10md md:text-10md 
+        font-bold shadow-2md 
+        leading-tight drop-shadow-sm 
+        transition-all 
+        duration-500">
+          {t('hero_title')}
+        </h1>
+
+        {/* সাবটাইটেল: ফ্রস্টেড লুক এবং হাই রিডাবিলিটি */}
+        <p className="mt-2 text-white/90 text-md md:text-1md max-w-2md font-medium leading-relaxed transition-colors duration-500">
+          {/* <span className="bg-white/10 px-2 py-1 rounded-md backdrop-blur-sm"> */}
+          {t('hero_subtitle')}
+          {/* </span> */}
+        </p>
 
         {/* ১. মেইন সাকসেস বাটন (সব মোডে একই প্রফেশনাল ডিজাইন) */}
         <button
           className="
-            mt-12 rounded-full px-10 py-4 text-lg font-black
-            uppercase tracking-[2px]
+            mt-4 rounded-full px-4 py-2 text-sm font-bold
+            uppercase tracking-[1px]
             bg-slate-900 text-white
             border-[3px] border-cyan-500
             shadow-[0_0_25px_rgba(6,182,212,0.3)]
             transition-all duration-300
-            hover:bg-cyan-500 hover:text-black
+            hover:bg-fuchsia-300 hover:text-black
             hover:shadow-[0_0_40px_rgba(6,182,212,0.6)]
             hover:scale-105 active:scale-95
           "
@@ -60,36 +59,7 @@ const HeroSection = () => {
         </button>
 
         {/* ২. নিচের বাটন সেট (সব মোডে একই লুক) */}
-        <div className="flex flex-wrap justify-center gap-6 mt-12">
-          {/* Explore Button */}
-          <button
-            className="
-              px-10 py-3 rounded-xl font-black uppercase text-sm tracking-widest
-              bg-gradient-to-r from-cyan-500 to-blue-600
-              text-white
-              shadow-[0_0_25px_rgba(6,182,212,0.4)]
-              hover:scale-105 hover:shadow-[0_0_35px_rgba(6,182,212,0.6)]
-              transition-all duration-300
-            "
-          >
-            {t('hero_btn_explore')}
-          </button>
 
-          {/* Learn More Button */}
-          <button
-            className="
-              px-10 py-3 rounded-xl font-black uppercase text-sm tracking-widest
-              border border-cyan-500/30
-              text-white
-              bg-slate-900 hover:bg-slate-800
-              shadow-[0_0_20px_rgba(6,182,212,0.25)]
-              transition-all duration-300
-              hover:scale-105
-            "
-          >
-            {t('hero_btn_learn')}
-          </button>
-        </div>
 
       </div>
 

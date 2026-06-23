@@ -3,47 +3,47 @@ import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa'; // সোশ্য�
 
 const BottomContactBar = () => {
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-black text-white h-11 border-t border-zinc-800 z-[100] flex items-center shadow-[0_-5px_25px_rgba(0,0,0,0.6)]">
-      
-      <div className="w-full lg:w-[90%] mx-auto flex justify-between items-center px-4 h-full">
-        
+    <div className="fixed bottom-0 left-0 w-full bg-black text-white h-6 border-t border-zinc-800 z-[100] flex items-center shadow-[0_-5px_25px_rgba(0,0,0,0.6)]">
+
+      <div className="w-full lg:w-[90%] mx-auto flex justify-between items-center px-2 h-full">
+
         {/* --- LEFT SIDE: WHATSAPP BUTTON --- */}
-        <a 
+        <a
           href="https://wa.me/01727642607" // আপনার নম্বরটি এখানে দিন
-          target="_blank" 
+          target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] px-4 h-full transition-all group shrink-0"
         >
           <MessageCircle size={18} className="text-white fill-white/10 group-hover:scale-110 transition-transform" />
           <span className="text-[11px] font-black uppercase tracking-widest text-white">WhatsApp</span>
         </a>
-        
-         {/* Facebook Button */}
-  <a 
-    href="YOUR_FACEBOOK_LINK" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 bg-[#1877F2] hover:bg-[#145dbf] px-4 h-full transition-all group shrink-0 border-l border-white/10"
-  >
-   <FaFacebookF size={18} className="text-white group-hover:scale-110 transition-transform" />
-    <span className="text-[11px] font-black uppercase tracking-widest text-white">Facebook</span>
-  </a>
 
-  {/* LinkedIn Button */}
-  <a 
-    href="YOUR_LINKEDIN_LINK" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 bg-[#0077B5] hover:bg-[#005a8a] px-4 h-full transition-all group shrink-0 border-l border-white/10"
-  >
-  <FaLinkedinIn size={18} className="text-white group-hover:scale-110 transition-transform" />
-    <span className="text-[11px] font-black uppercase tracking-widest text-white">LinkedIn</span>
-  </a>
-        
+        {/* Facebook Button */}
+        <a
+          href="YOUR_FACEBOOK_LINK"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-[#1877F2] hover:bg-[#145dbf] px-4 h-full transition-all group shrink-0 border-l border-white/10"
+        >
+          <FaFacebookF size={18} className="text-white group-hover:scale-110 transition-transform" />
+          <span className="text-[11px] font-black uppercase tracking-widest text-white">Facebook</span>
+        </a>
+
+        {/* LinkedIn Button */}
+        <a
+          href="YOUR_LINKEDIN_LINK"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-[#0077B5] hover:bg-[#005a8a] px-4 h-full transition-all group shrink-0 border-l border-white/10"
+        >
+          <FaLinkedinIn size={18} className="text-white group-hover:scale-110 transition-transform" />
+          <span className="text-[11px] font-black uppercase tracking-widest text-white">LinkedIn</span>
+        </a>
+
 
         {/* --- RIGHT SIDE: COUNTRIES & EMAIL --- */}
         <div className="flex items-center gap-6 md:gap-10 overflow-x-auto no-scrollbar ml-6">
-          
+
           {/* Bangladesh */}
           <div className="flex items-center gap-2 group cursor-pointer whitespace-nowrap">
             <img src="https://flagcdn.com/w20/bd.png" alt="BD" className="w-5 rounded-[2px]" />
