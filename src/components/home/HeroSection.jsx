@@ -21,7 +21,7 @@ const HeroSection = () => {
 
 
       </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20 mt-30">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20 mt-20">
 
 <h1
   className="
@@ -64,12 +64,12 @@ const HeroSection = () => {
         {/* ১. মেইন সাকসেস বাটন (সব মোডে একই প্রফেশনাল ডিজাইন) */}
 <button
   className="
-    mt-7
-    px-8 py-3 
+    mt-5
+    px-4 py-2 
     rounded-full 
     font-black uppercase tracking-widest
     /* আপনার দেওয়া মেইন ব্লু এবং বর্ডার */
-    bg-purple-200/10 bg-mauve-400
+    bg-cyan-600 
     border-2 border-cyan-400
     text-white
     
@@ -88,12 +88,12 @@ const HeroSection = () => {
   {t('hero_btn_success')}
 </button>
 
-  <div className="flex flex-wrap justify-center gap-6 mt-4">
+  <div className="flex flex-wrap justify-center gap-6 mt-6">
     
     {/* Explore Courses - Glass Style */}
     <button
       className="
-        px-3 py-3 rounded-xl font-bold uppercase text-sm tracking-widest
+        px-3 py-2 rounded-xl font-bold uppercase text-sm tracking-widest
         bg-white/10 backdrop-blur-sm
         text-white border border-blue-400
         hover:bg-white/20 hover:border-cyan-400
@@ -106,7 +106,7 @@ const HeroSection = () => {
     {/* Learn More - Outline Style */}
     <button
       className="
-        px-6 py-3 rounded-xl font-bold uppercase text-sm tracking-widest
+        px-5 py-2 rounded-xl font-bold uppercase text-sm tracking-widest
         text-cyan-400 border-2 border-cyan-500/50
         bg-white/10 backdrop-blur-lg
         transition-all duration-300
