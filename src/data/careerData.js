@@ -70,5 +70,25 @@ export const careerDatabase = {
     roadmap: ["Automation Basics", "Developer Certification", "Solution Architect", "Infrastructure Lead"],
     salary: { junior: "45k-75k", mid: "100k-180k", senior: "300k+" },
     contribution: 130000
+  },
+  
+  "SAP": {
+    "skills": ["ABAP", "SAP HANA", "FICO/MM/SD Modules", "SAP Basis", "S/4HANA"],
+    "roadmap": ["SAP Associate", "Specialist Certification", "Solution Architect", "SAP Consultant"],
+    "salary": { "junior": "50k-85k", "mid": "120k-250k", "senior": "450k+" },
+    "contribution": 150000
+  },
+  "Workday": {
+    "skills": ["HCM Core", "Workday Extend", "Prism Analytics", "EIB/Studio", "Calculated Fields"],
+    "roadmap": ["Workday Core Certification", "Integration Specialty", "Financials/Payroll Expert", "Enterprise Architect"],
+    "salary": { "junior": "60k-95k", "mid": "150k-300k", "senior": "500k+" },
+    "contribution": 145000
+  },
+  "ETL": {
+    "skills": ["Informatica/Talend", "SQL & NoSQL", "Data Modeling", "Python/PySpark", "Cloud Data Warehousing"],
+    "roadmap": ["Data Engineer", "ETL Developer", "Data Architect", "Chief Data Officer"],
+    "salary": { "junior": "40k-75k", "mid": "110k-220k", "senior": "380k+" },
+    "contribution": 125000
   }
+
 };
