@@ -1,50 +1,74 @@
 export const careerDatabase = {
-  "AI & Machine Learning Engineer": {
-    skills: ["Python", "TensorFlow", "Neural Networks", "NLP", "OpenAI APIs"],
-    roadmap: ["Advanced Python", "Math for AI", "DL Models", "LLM Fine-tuning", "Deployment"],
-    salary: { junior: "50k-80k", mid: "120k-250k", senior: "400k+" },
-    contribution: 150000 
+  "Aviation Management": {
+    skills: ["Airport Operations", "Safety Regulations", "Logistics", "Strategic Planning", "Aviation Law"],
+    roadmap: ["Aviation Basics", "Safety Compliance", "Fleet Management", "Airport Planning", "Executive Leadership"],
+    salary: { junior: "40k-70k", mid: "90k-160k", senior: "250k+" },
+    contribution: 110000 
   },
-  "Cloud Architect (AWS/Azure)": {
-    skills: ["AWS/Azure", "Terraform", "Docker", "Networking", "Security"],
-    roadmap: ["Cloud Fundamentals", "Serverless Architecture", "DevOps Tools", "Big Data on Cloud"],
-    salary: { junior: "40k-70k", mid: "100k-180k", senior: "300k+" },
-    contribution: 120000
-  },
-  "DevOps & SRE Specialist": {
-    skills: ["CI/CD", "Kubernetes", "Linux Admin", "Ansible", "Monitoring"],
-    roadmap: ["Linux Mastery", "Containerization", "Automation", "Infrastructure as Code"],
-    salary: { junior: "35k-60k", mid: "90k-160k", senior: "250k+" },
-    contribution: 110000
-  },
-  "Cyber Security Lead": {
-    skills: ["Ethical Hacking", "Pen-Testing", "SOC", "ISO 27001", "Cryptography"],
-    roadmap: ["Network Security", "Security Auditing", "Threat Intelligence", "Incident Response"],
-    salary: { junior: "35k-55k", mid: "80k-150k", senior: "220k+" },
-    contribution: 100000
-  },
-  "Full Stack Web Developer": {
-    skills: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Cloud Hosting"],
-    roadmap: ["Modern Frontend", "API Design", "System Architecture", "Performance Tuning"],
-    salary: { junior: "30k-50k", mid: "70k-130k", senior: "180k+" },
-    contribution: 85000
-  },
-  "Data Scientist": {
-    skills: ["R/Python", "SQL", "Tableau", "Big Data", "Statistical Modeling"],
-    roadmap: ["Data Cleaning", "EDA", "Feature Engineering", "Predictive Modeling"],
-    salary: { junior: "40k-60k", mid: "90k-160k", senior: "250k+" },
-    contribution: 110000
-  },
-  "Blockchain Developer": {
-    skills: ["Solidity", "Smart Contracts", "Web3.js", "Ethereum", "Rust"],
-    roadmap: ["Blockchain Basics", "Smart Contract Dev", "DApp Creation", "Security Auditing"],
-    salary: { junior: "45k-80k", mid: "110k-200k", senior: "350k+" },
+  "Medical Tech Innovation": {
+    skills: ["Biomedical Engineering", "Healthcare AI", "FDA Regulations", "IoT Devices", "Clinical Data"],
+    roadmap: ["Health-tech Fundamentals", "Regulatory Compliance", "Product Prototyping", "Digital Health Strategy"],
+    salary: { junior: "50k-85k", mid: "110k-200k", senior: "350k+" },
     contribution: 140000
   },
-  "Digital Nomad / SaaS Expert": {
-    skills: ["Global Branding", "SaaS Strategy", "Remote Ops", "English Articulation"],
-    roadmap: ["Global Market Research", "Remote Tooling", "SaaS Launch", "High-End Freelancing"],
-    salary: { junior: "30k-60k", mid: "80k-150k", senior: "250k+" },
+  "EdTech Design": {
+    skills: ["Instructional Design", "UX/UI Design", "LMS Platforms", "Gamification", "Curriculum Dev"],
+    roadmap: ["Learning Theories", "Modern UI Design", "Product Management", "Digital Content Strategy"],
+    salary: { junior: "35k-60k", mid: "80k-150k", senior: "220k+" },
     contribution: 95000
+  },
+  "Climate Change Analysis": {
+    skills: ["Environmental Data Science", "GIS", "Carbon Accounting", "Policy Analysis", "Sustainability"],
+    roadmap: ["Climatology Basics", "Data Modeling", "Impact Assessment", "International Policy"],
+    salary: { junior: "40k-65k", mid: "85k-160k", senior: "240k+" },
+    contribution: 105000
+  },
+  "Cultural Diplomacy": {
+    skills: ["International Relations", "Public Relations", "Intercultural Comm", "Negotiation", "Event Mgmt"],
+    roadmap: ["Social Science", "Global Communication", "Diplomatic Protocol", "Policy Advocacy"],
+    salary: { junior: "30k-55k", mid: "75k-130k", senior: "180k+" },
+    contribution: 85000
+  },
+  "ServiceNow": {
+    skills: ["ServiceNow Platform", "ITSM", "JavaScript", "Workflow Automation", "API Integration"],
+    roadmap: ["Certified System Admin", "Implementation Specialist", "Scripting", "Application Dev"],
+    salary: { junior: "45k-75k", mid: "100k-180k", senior: "300k+" },
+    contribution: 125000
+  },
+  "MuleSoft": {
+    skills: ["API Design", "Anypoint Platform", "DataWeave", "Integration Patterns", "RAML"],
+    roadmap: ["Mule Fundamentals", "API Development", "Advanced Connectors", "Platform Architect"],
+    salary: { junior: "50k-80k", mid: "110k-190k", senior: "320k+" },
+    contribution: 135000
+  },
+  "Alteryx": {
+    skills: ["Data Blending", "ETL Processes", "Predictive Analytics", "Spatial Analysis", "Automation"],
+    roadmap: ["Designer Core", "Advanced Analytics", "Server Admin", "Machine Learning in Alteryx"],
+    salary: { junior: "40k-70k", mid: "95k-165k", senior: "280k+" },
+    contribution: 115000
+  },
+  "Info MDM": {
+    skills: ["Data Governance", "Informatica MDM", "Data Profiling", "Master Data Strategy", "SQL"],
+    roadmap: ["Data Fundamentals", "MDM Hub Configuration", "Data Stewardship", "Enterprise Architect"],
+    salary: { junior: "45k-75k", mid: "100k-175k", senior: "290k+" },
+    contribution: 120000
+  },
+  "Tableau": {
+    skills: ["Data Visualization", "SQL", "Dashboard Design", "Tableau Server", "Statistical Analysis"],
+    roadmap: ["Tableau Desktop", "Visual Best Practices", "Level of Detail (LOD)", "Server Management"],
+    salary: { junior: "35k-65k", mid: "90k-160k", senior: "250k+" },
+    contribution: 100000
+  },
+  "PEGA": {
+    skills: ["BPM Concepts", "Pega Platform", "Rule Design", "Case Management", "System Architecture"],
+    roadmap: ["Certified System Architect", "Senior Architect", "Decisioning", "Lead Architect"],
+    salary: { junior: "50k-85k", mid: "120k-210k", senior: "360k+" },
+    contribution: 145000
+  },
+  "BluePrism": {
+    skills: ["RPA", "Process Automation", "Object Design", "Control Room Mgmt", "C# / VB.NET"],
+    roadmap: ["Automation Basics", "Developer Certification", "Solution Architect", "Infrastructure Lead"],
+    salary: { junior: "45k-75k", mid: "100k-180k", senior: "300k+" },
+    contribution: 130000
   }
 };

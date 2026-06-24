@@ -17,7 +17,7 @@ i18n
           "Find a Mentor": "Find a Mentor",
           "Experts & Beneficiaries": "Experts & Beneficiaries",
           "Stunning Innovation": "Stunning Innovation",
-          "Global Language": "Global Language",
+          "Languages": " Languages",
           "Courses": "Courses",
           "Contact": "Contact",
 
@@ -207,7 +207,7 @@ i18n
           "Ongoing Projects": "চলমান প্রকল্পসমূহ",
           "Project Analysis": "প্রকল্প বিশ্লেষণ",
           "Implementation": "বাস্তবায়ন কৌশল",
-          "Global Language": "গ্লোবাল ল্যাঙ্গুয়েজ",
+          "Languages": "ভাষাসমূহ",
           "Demo": "ডেমো",
 
           // --- Experts & Beneficiaries (BN) ---
@@ -331,7 +331,7 @@ i18n
           "Ongoing Projects": "Projets en cours",
           "Project Analysis": "Analyse de projet",
           "Implementation": "Mise en œuvre",
-          "Global Language": "Langue mondiale",
+           "Languages": "Langues",
           "Demo": "Démo",
 
           "Experts": "Experts",
@@ -455,7 +455,7 @@ i18n
           "Ongoing Projects": "進行中のプロジェクト",
           "Project Analysis": "プロジェクト分析",
           "Implementation": "実装プロセス",
-          "Global Language": "グローバル言語",
+          "Languages": "言語",
           "Demo": "デモ",
 
           "Experts": "専門家",
@@ -650,7 +650,7 @@ i18n
           "Ongoing Projects": "Laufende Projekte",
           "Project Analysis": "Projektanalyse",
           "Implementation": "Implementierung",
-          "Global Language": "Globale Sprache",
+          "Languages": "Sprachen",
           "Demo": "Demo",
           // German
 "PreFuture": "PreZukunft",
