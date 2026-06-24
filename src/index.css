@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 /* --- এটি Tailwind v4 এ ক্লাস-বেসড ডার্ক মোড চালু করার জন্য --- */
 @custom-variant dark (&:where(.dark, .dark *));

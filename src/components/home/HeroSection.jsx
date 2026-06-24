@@ -14,19 +14,19 @@ const HeroSection = () => {
         <img
           src={PreSkillImg}
           alt="PreSkill Banner"
-          className="w-full h-full object-cover opacity-80 "
+          className="w-full h-full object-cover opacity-80 bg-black/20 "
         />
 
 
 
 
       </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20 mt-35">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20 mt-20">
 
 <h1
   className="
     text-white dark:text-white
-    text-7xl md:text-5xl
+    text-xl md:text-4xl
     font-black
     leading-tight
     max-w-6xl
@@ -35,6 +35,12 @@ const HeroSection = () => {
     hover:scale-105
     hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]
     cursor-default
+    
+    backdrop-blur-xl
+    border border-white/10
+    rounded-3xl
+    px-4 py-2
+    shadow-[0_8px_32px_rgba(0,0,0,0.25)]
   "
 >
   {t('hero_title')}
@@ -44,19 +50,11 @@ const HeroSection = () => {
   className="
     mt-4
     text-white
-    text-2xl md:text-2xl
+    text-xl md:text-2xl
     max-w-5xl
     font-bold
     leading-relaxed
     transition-all duration-500
-
-    bg-gradient-to-br
-    from-white/10
-    to-white/5
-    backdrop-blur-2xl
-    border border-white/10
-    rounded-3xl
-    px-4 py-2
     shadow-[0_8px_32px_rgba(0,0,0,0.25)]
   "
 >
@@ -64,52 +62,60 @@ const HeroSection = () => {
 </p>
 
         {/* ১. মেইন সাকসেস বাটন (সব মোডে একই প্রফেশনাল ডিজাইন) */}
-        <button
-          className="
-            mt-12 rounded-full px-12 py-4 text-xl font-black
-            uppercase tracking-[2px]
-            bg-slate-900 text-white
-            border-[3px] border-cyan-500
-            shadow-[0_0_25px_rgba(6,182,212,0.3)]
-            transition-all duration-300
-            hover:bg-cyan-500 hover:text-white
-            hover:shadow-[0_0_40px_rgba(6,182,212,0.6)]
-            hover:scale-105 active:scale-95
-          "
-        >
-          {t('hero_btn_success')}
-        </button>
-           <div className="flex flex-wrap justify-center gap-6 mt-12">
+<button
+  className="
+    mt-8
+    px-8 py-3 
+    rounded-full 
+    font-black uppercase tracking-widest
+    /* আপনার দেওয়া মেইন ব্লু এবং বর্ডার */
+    bg-purple-200/10 bg-mauve-400
+    border-2 border-cyan-400
+    text-white
+    
+    /* হালকা গ্লো শ্যাডো */
+    shadow-[0_0_20px_rgba(6,182,212,0.3)]
+    
+    /* সিম্পল ট্রানজিশন */
+    transition-all duration-300
+    hover:scale-105 
+    hover:bg-cyan-600 
+    hover:border-white
+    hover:shadow-[0_0_30px_rgba(6,182,212,0.5)]
+    active:scale-95
+  "
+>
+  {t('hero_btn_success')}
+</button>
 
-         <button
-            className="
-              px-8 py- rounded-xl font-black uppercase text-sm tracking-widest
-              bg-gradient-to-r from-cyan-500 to-blue-600
-              text-white
-              shadow-[0_0_25px_rgba(6,182,212,0.4)]
-              hover:scale-105 hover:shadow-[0_0_35px_rgba(6,182,212,0.6)]
-              transition-all duration-300
-            "
-          >
-            {t('hero_btn_explore')}
-          </button>
+  <div className="flex flex-wrap justify-center gap-6 mt-12">
+    
+    {/* Explore Courses - Glass Style */}
+    <button
+      className="
+        px-3 py-3 rounded-xl font-bold uppercase text-sm tracking-widest
+        bg-white/10 backdrop-blur-sm
+        text-white border border-blue-400
+        hover:bg-white/20 hover:border-cyan-400
+        shadow-xl transition-all duration-300 outline-blue-400
+      "
+    >
+      {t('hero_btn_explore')}
+    </button>
 
-          {/* Learn More Button */}
-          <button
-            className="
-             px-10 py-4 rounded-xl font-black uppercase text-sm tracking-widest
-              bg-gradient-to-r from-cyan-500 to-blue-600
-              text-white
-              shadow-[0_0_25px_rgba(6,182,212,0.4)]
-              hover:scale-105 hover:shadow-[0_0_35px_rgba(6,182,212,0.6)]
-              transition-all duration-300
-            "
-          >
-            {t('hero_btn_learn')}
-          </button>
-          </div>
-
-        
+    {/* Learn More - Outline Style */}
+    <button
+      className="
+        px-6 py-3 rounded-xl font-bold uppercase text-sm tracking-widest
+        text-cyan-400 border-2 border-cyan-500/50
+        bg-white/10 backdrop-blur-lg
+        transition-all duration-300
+      "
+    >
+      {t('hero_btn_learn')}
+    </button>
+    
+  </div>
 
         {/* ২. নিচের বাটন সেট (সব মোডে একই লুক) */}
 
