@@ -21,7 +21,7 @@ const HeroSection = () => {
 
 
       </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20 mt-20">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20 mt-18">
 
 <h1
   className="
@@ -64,7 +64,7 @@ const HeroSection = () => {
         {/* ১. মেইন সাকসেস বাটন (সব মোডে একই প্রফেশনাল ডিজাইন) */}
 <button
   className="
-    mt-8
+    mt-7
     px-8 py-3 
     rounded-full 
     font-black uppercase tracking-widest
@@ -88,7 +88,7 @@ const HeroSection = () => {
   {t('hero_btn_success')}
 </button>
 
-  <div className="flex flex-wrap justify-center gap-6 mt-12">
+  <div className="flex flex-wrap justify-center gap-6 mt-9">
     
     {/* Explore Courses - Glass Style */}
     <button
