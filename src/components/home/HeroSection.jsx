@@ -14,19 +14,19 @@ const HeroSection = () => {
         <img
           src={PreSkillImg}
           alt="PreSkill Banner"
-          className="w-full h-full object-cover opacity-90 "
+          className="w-full h-full object-cover opacity-80 "
         />
 
 
 
 
       </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20 mt-20">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20 mt-35">
 
 <h1
   className="
     text-white dark:text-white
-    text-8xl md:text-6xl
+    text-7xl md:text-5xl
     font-black
     leading-tight
     max-w-6xl
@@ -42,7 +42,7 @@ const HeroSection = () => {
 
  <p
   className="
-    mt-8
+    mt-4
     text-white
     text-2xl md:text-2xl
     max-w-5xl
