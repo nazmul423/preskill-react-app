@@ -21,7 +21,7 @@ const HeroSection = () => {
 
 
       </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20 mt-18">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20 mt-30">
 
 <h1
   className="
