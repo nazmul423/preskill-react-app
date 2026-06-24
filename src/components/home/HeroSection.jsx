@@ -88,7 +88,7 @@ const HeroSection = () => {
   {t('hero_btn_success')}
 </button>
 
-  <div className="flex flex-wrap justify-center gap-6 mt-9">
+  <div className="flex flex-wrap justify-center gap-6 mt-4">
     
     {/* Explore Courses - Glass Style */}
     <button
