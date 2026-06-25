@@ -289,28 +289,16 @@ const navLinks = [
         ]
       },
       {
-        name: "Newest Skill",
+        name: "Future Skill",
         children: [
-          {
-            name: "NetSuite",
-            children: [{ name: "Master Self-Paced", path: "/newest/netsuite" }]
-          },
-          {
-            name: "Informatica",
-            children: [{ name: "Master Self-Paced", path: "/newest/informatica" }]
-          },
-          {
-            name: "RPA",
-            children: [{ name: "Master Self-Paced", path: "/newest/rpa" }]
-          },
-          {
-            name: "PEGA",
-            children: [{ name: "Master Self-Paced", path: "/newest/pega" }]
-          },
-          {
-            name: "IAM",
-            children: [{ name: "Master Self-Paced", path: "/newest/iam" }]
-          }
+              { name: "AGI", path: "/newest/agi" },
+    { name: "Autonomous Systems", path: "/newest/autonomous-systems" },
+    { name: "Quantum Computing", path: "/newest/quantum-computing" },
+    { name: "Edge Computing", path: "/newest/edge-computing" },
+    { name: "Robotics", path: "/newest/robotics" },
+    { name: "Digital Twin", path: "/newest/digital-twin" },
+    { name: "AI", path: "/newest/ai" }
+
         ]
       }
     ]
@@ -412,7 +400,7 @@ const navLinks = [
   ],
 },
 
-{ name: "Demo", path: "/courses" },
+{ name: "Career", path: "/courses" },
 { name: "Contact", path: "/contact" },
 ];
 
