@@ -48,7 +48,7 @@ const CareerAI = () => {
           <form onSubmit={handleRecommend} className="p-8 rounded-3xl bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 shadow-2xl space-y-5">
             <div>
               <label className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-400 mb-2">
-                <User size={14}/> {t('your_name')}
+                <User size={14}/> {t('name')}
               </label>
               <input 
                 required 
@@ -61,7 +61,7 @@ const CareerAI = () => {
             {/* --- নতুন ফিল্ড: Degree --- */}
             <div>
               <label className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-400 mb-2">
-                <GraduationCap size={14}/> Your Degree
+                <GraduationCap size={14}/> Degree
               </label>
               <input 
                 required 
@@ -74,7 +74,7 @@ const CareerAI = () => {
             {/* --- নতুন ফিল্ড: Age --- */}
             <div>
               <label className="flex items-center gap-2 text-[10px] font-black uppercase text-slate-400 mb-2">
-                <Calendar size={14}/> Your Age
+                <Calendar size={14}/>  Age
               </label>
               <input 
                 required 
@@ -86,7 +86,7 @@ const CareerAI = () => {
             </div>
 
             <div>
-              <label className="text-[10px] font-black uppercase text-slate-400 block mb-2">{t('your_interest')}</label>
+              <label className="text-[10px] font-black uppercase text-slate-400 block mb-2">{t('favourite')}</label>
               <select 
                 className="w-full bg-slate-50 dark:bg-black border border-slate-200 dark:border-white/10 p-4 rounded-xl text-slate-900 dark:text-white outline-none cursor-pointer font-bold" 
                 value={formData.interest}
