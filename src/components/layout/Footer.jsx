@@ -46,21 +46,27 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Quick Navigation */}
-          <div>
-            <h4 className="text-slate-900 dark:text-white font-black text-[11px] uppercase tracking-[0.3em] mb-10 border-l-4 border-cyan-500 pl-4 transition-colors">
-              {t('footer_paths')}
-            </h4>
-            <ul className="space-y-4">
-              {['Cloud Computing', 'Cyber Security', 'Data Science', 'DevOps Specialist', 'RPA Automation'].map((item) => (
-                <li key={item}>
-                  <Link to="#" className="text-slate-600 dark:text-zinc-500 hover:text-cyan-600 dark:hover:text-cyan-400 text-sm flex items-center gap-2 group transition-all">
-                    <ArrowRight size={14} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />
-                    {t(item)}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+         <div>
+  <h4 className="text-slate-900 dark:text-white font-black text-[11px] uppercase tracking-[0.3em] mb-10 border-l-4 border-cyan-500 pl-4 transition-colors">
+    {t('footer_paths')}
+  </h4>
+  <ul className="space-y-4">
+    {[
+      'AGI', 
+      'Autonomous Systems', 
+      'Quantum Computing', 
+      'Edge Computing', 
+      'Robotics'
+    ].map((item) => (
+      <li key={item}>
+        <Link to="#" className="text-slate-600 dark:text-zinc-500 hover:text-cyan-600 dark:hover:text-cyan-400 text-sm flex items-center gap-2 group transition-all">
+          <ArrowRight size={14} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />
+          {t(item)}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
 
           {/* Column 3: Contact Details */}
           <div>
@@ -106,7 +112,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom Bar */}
-        <div className="pt-10 border-t border-slate-200 dark:border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="pt-8 border-t border-slate-200 dark:border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-slate-500 dark:text-zinc-700 text-[10px] font-black uppercase tracking-[0.4em] text-center md:text-left transition-colors">
             © 2026 PreFuture Skill Foundation • Empowering Excellence
           </p>
@@ -117,7 +123,7 @@ const Footer = () => {
         </div>
 
         {/* নতুন যোগ করা অংশ: Proposed By */}
-        <div className="mt-8 pt-8 border-t border-slate-100 dark:border-zinc-900/50 text-center">
+        <div className="mt-5 mb-5 pt-8 border-t border-slate-100 dark:border-zinc-900/50 text-center">
           <p className="text-[11px] font-bold text-slate-400 dark:text-zinc-600 tracking-[0.2em] uppercase">
             Proposed by <span className="text-cyan-600 dark:text-cyan-500/80">Surendra Kumar Govt Girls' High School, Manikganj</span>
           </p>
