@@ -133,7 +133,7 @@ i18n
           "footer_news_desc": "Subscribe to get notified about new program launches.",
           "footer_news_placeholder": "Email Address",
           "footer_news_btn": "JOIN",
-          "footer_rights": "© 2024 PreFuture Skill Foundation • Empowering Excellence",
+          
           "footer_privacy": "Privacy Policy",
           "footer_terms": "Terms of Service",
           // --- English (en) ব্লকের ভেতর ---
@@ -408,7 +408,7 @@ i18n
           "footer_news_desc": "Abonnez-vous pour être informé des nouveaux lancements.",
           "footer_news_placeholder": "Adresse e-mail",
           "footer_news_btn": "REJOINDRE",
-          "footer_rights": "© 2024 Fondation PreFuture Skill • Autonomiser l'excellence",
+          "footer_rights": "© 2026 Fondation PreFuture Skill • Autonomiser l'excellence",
           "footer_privacy": "Politique de confidentialité",
           "footer_terms": "Conditions d'utilisation",
 
